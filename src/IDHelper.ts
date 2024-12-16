@@ -406,12 +406,15 @@ export class IDHelper
     private GLOCK_19X: string = "63088377b5cd696784087147";
     private M1911A1: string = "5e81c3cbac2bb513793cdc75";
     private M45A1: string = "5f36a0e5fbf956000b716b65";
+    private CHIAPPA_RHINO_50DS = "61a4c8884f95bc3b2c5dc96f";
+    private CHIAPPA_RHINO_200DS = "624c2e8614da335f1e034d8c";
     private FN57: string = "5d3eb3b0a4b93615055e84d2";
     private FN57_FDE: string = "5d67abc1a4b93614ec50137f";
     private P226R: string = "56d59856d2720bd8418b456a";
     private M9A3: string = "5cadc190ae921500103bb3b6";
     private PL_15: string = "602a9740da11d6478d5a06dc";
     private USP: string = "6193a720f8ee7e52e42109ed";
+    private RSH_12: string = "633ec7c2a6918cb895019c6c";
 
     //Shotguns
     private BENELLI_M3: string = "6259b864ebedf17603599e88";
@@ -453,6 +456,75 @@ export class IDHelper
     private KRISS_VECTOR_9MM: string = "5fc3f2d5900b1d5091531e57";
     private KRISS_VECTOR_45ACP: string = "5fb64bc92b1b027b1f50bcf2";
 
+    //LMGs
+    private RPD: string = "6513ef33e06849f06c0957ca";
+    private RPDN: string = "65268d8ecb944ff1e90ea385";
+    private RPK_16: string = "5beed0f50db834001c062b12";
+    private PKM: string = "64637076203536ad5600c990";
+    private PKP: string = "64ca3d3954fc657e230529cc";
+    private M60E4: string = "65fb023261d5829b2d090755";
+    private M60E6: string = "661ceb1b9311543c7104149b";
+    private M60E6_FDE: string = "661cec09b2c6356b4d0c7a36";
+
+    //DMRs
+    private G28: string = "6176aca650224f204c1da3fb";
+    private SR25: string = "5df8ce05b11454561e39243b";
+    private RSASS: string = "5a367e5dc4a282000e49738f";
+    private M1A: string = "5aafa857e5b5b00018480968";
+    private SVDS: string = "5c46fbd72e2216398b5a8c9c";
+    private MK_18_MJOLNIR: string = "5fc22d7c187fea44d52eda44";
+    private VSS: string = "57838ad32459774a17445cd2";
+
+    //Bolt Action Rifles
+    private AXMC: string = "627e14b21713922ded6f2c15";
+    private DVL_10: string = "588892092459774ac91d4b11";
+    private VPO_215: string = "5de652c31b7e3716273428be";
+    private MOSIN_SNIPER: string = "5ae08f0a5acfc408fb1398a1";
+    private MOSIN_INFANTRY: string = "5bfd297f0db834001a669119";
+    private T_5000M: string = "5df24cf80dee1b22f862e9bc";
+    private M700: string = "5bfea6e90db834001b7347f3";
+    private SV_98: string = "55801eed4bdc2d89578b4588";
+
+    //Assault Rifles
+    private AS_VAL: string = "57c44b372459772d2b39b8ce";
+    private ASH_12: string = "5cadfbf7ae92152ac412eeef";
+    private MK47: string = "606587252535c57a13424cfd";
+    private M4A1: string = "5447a9cd4bdc2dbd208b4567";
+    private MDR_556: string = "5c488a752e221602b412af63";
+    private MDR_762: string = "5dcbd56fdbd3d91b3e5468d5";
+    private SA_58: string = "5b0bbe4e5acfc40dc528a72d";
+    private SCAR_H: string = "6183afd850224f204c1da514";
+    private SCAR_H_FDE: string = "6165ac306ef05c2ce828ef74";
+    private SCAR_L: string = "6184055050224f204c1da540";
+    private SCAR_L_FDE: string = "618428466ef05c2ce828f218";
+    private HK_416A5: string = "5bb2475ed4351e00853264e3";
+    private G36: string = "623063e994fc3f7b302a9696";
+    private AK101: string = "5ac66cb05acfc40198510a10";
+    private AK102: string = "5ac66d015acfc400180ae6e4";
+    private AK103: string = "5ac66d2e5acfc43b321d4b53";
+    private AK104: string = "5ac66d725acfc43b321d4b60";
+    private AK105: string = "5ac66d9b5acfc4001633997a";
+    private AK12: string = "6499849fc93611967b034949";
+    private AK74: string = "5bf3e03b0db834001d2c4a9c";
+    private AK74M: string = "5ac4cd105acfc40016339859";
+    private AK74N: string = "5644bd2b4bdc2d3b4c8b4572";
+    private AKM: string = "59d6088586f774275f37482f";
+    private AKMN: string = "5a0ec13bfcdbcb00165aa685";
+    private AKMS: string = "5a0ec13bfcdbcb00165aa685";
+    private AKMSN: string = "5abcbc27d8ce8700182eceeb";
+    private AKS74: string = "5bf3e0490db83400196199af";
+    private AKS74N: string = "5ab8e9fcd8ce870019439434";
+    private AKS74U: string = "57dc2fa62459775949412633";
+    private AKS74UB: string = "5839a40f24597726f856b511";
+    private AKS74UN: string = "583990e32459771419544dd2";
+    private RD704: string = "628a60ae6b1d481ff772e9c8";
+    private MCX: string = "5fbcc1d9016cce60e8341ab3";
+    private MCX_SPEAR: string = "65290f395ae2ae97b80fdf2d";
+    private AUG_A1: string = "62e7c4fba689e8c9c50dfc38";
+    private AUG_A3: string = "63171672192e68c5460cebc5";
+    private AUG_A3_BLK: string = "6718817435e3cfd9550d2c27";
+
+
     public Weapons = {
         Pistols: [
             this.APS,
@@ -468,7 +540,16 @@ export class IDHelper
             this.GLOCK_18C,
             this.GLOCK_19X,
             this.M1911A1,
-            this.M45A1
+            this.M45A1,
+            this.CHIAPPA_RHINO_50DS,
+            this.CHIAPPA_RHINO_200DS,
+            this.FN57,
+            this.FN57_FDE,
+            this.P226R,
+            this.M9A3,
+            this.PL_15,
+            this.USP,
+            this.RSH_12
         ],
         Shotguns: [
             this.BENELLI_M3,
@@ -509,7 +590,79 @@ export class IDHelper
             this.SR_2M_VERESK,
             this.KRISS_VECTOR_9MM,
             this.KRISS_VECTOR_45ACP
+        ],
+        Lmgs: [
+            this.RPD,
+            this.RPDN,
+            this.RPK_16,
+            this.PKM,
+            this.PKP,
+            this.M60E4,
+            this.M60E6,
+            this.M60E6_FDE
+        ],
+        Dmrs: [
+            this.G28,
+            this.SR25,
+            this.RSASS,
+            this.M1A,
+            this.SVDS,
+            this.MK_18_MJOLNIR,
+            this.VSS
+        ],
+        BoltActionRifles: [
+            this.AXMC,
+            this.DVL_10,
+            this.VPO_215,
+            this.MOSIN_SNIPER,
+            this.MOSIN_INFANTRY,
+            this.T_5000M,
+            this.M700,
+            this.SV_98
+        ],
+        AssaultRifles: [
+            this.AS_VAL,
+            this.ASH_12,
+            this.MK47,
+            this.M4A1,
+            this.MDR_556,
+            this.MDR_762,
+            this.SA_58,
+            this.SCAR_H,
+            this.SCAR_H_FDE,
+            this.SCAR_L,
+            this.SCAR_L_FDE,
+            this.HK_416A5,
+            this.G36,
+            this.AK101,
+            this.AK102,
+            this.AK103,
+            this.AK104,
+            this.AK105,
+            this.AK12,
+            this.AKM,
+            this.AKMN,
+            this.AKMS,
+            this.AKMSN,
+            this.AK74,
+            this.AK74M,
+            this.AK74N,
+            this.AK74N,
+            this.AK74N,
+            this.AK74N,
+            this.AKS74,
+            this.AKS74N,
+            this.AKS74U,
+            this.AKS74UB,
+            this.AKS74UN,
+            this.RD704,
+            this.MCX,
+            this.MCX_SPEAR,
+            this.AUG_A1,
+            this.AUG_A3,
+            this.AUG_A3_BLK
         ]
+
     }
 
     
