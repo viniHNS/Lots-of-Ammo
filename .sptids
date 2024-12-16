@@ -1,0 +1,11 @@
+{
+    "675f634ff132d4b47f2c1281":{
+        "en": {
+            "Name":"9x19mm Hornady Critical Defense FTx®",
+            "ShortName": "9mm FTx",
+            "Type": "Ammo",
+            "Caliber": "9x19PARA",
+            "Damage": 83
+        }
+    }
+}
