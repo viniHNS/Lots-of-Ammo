@@ -1,11 +1,35 @@
 {
   "templates": {
     "675f634ff132d4b47f2c1281": {
-      "Name": "9x19mm FTX",
-      "ShortName": "9mm FTX",
-      "Description": "A 9x19mm Parabellum FTX cartridge with a hollow-point bullet featuring a polymer-filled tip and a copper jacket, designed for self-defense and law enforcement use. The innovative FTX design ensures controlled expansion upon impact, providing exceptional stopping power and devastating wound channels while minimizing the risk of overpenetration."
+      "Name": "9x19mm Hornady Critical Defense FTx®",
+      "ShortName": "9mm FTx",
+      "Description": "The 9x19mm Hornady Critical Defense FTx® ammunition is a popular choice for self-defense. The patented FTX® bullet design ensures reliable expansion and penetration. Manufactured by Hornady."
+    },
+    "": {
+      "Name": "9x19mm Federal HST",
+      "ShortName": "9mm HST",
+      "Description": "The 9x19mm Federal HST ammunition is a popular choice for self-defense. The HST bullet design ensures reliable expansion and penetration, while the nickel-plated cases provide reliable feeding and corrosion resistance. Manufactured by Federal."
+    },
+    "": {
+      "Name": "9x19mm Tula",
+      "ShortName": "9mm Steel",
+      "Description": "The 9x19mm Tula Steel Case ammunition is a popular choice for range training. The steel cases are coated with a polymer layer to ensure reliable feeding and extraction. Manufactured by Tula."
+    },
+    "": {
+      "Name": "9x19mm Soft Point (SP)",
+      "ShortName": "9x19mm SP",
+      "Description": "A 9x19mm Soft Point (SP) ammunition is a popular choice for hunting. The soft point bullet design ensures reliable expansion and penetration. "
+    },
+    "": {
+      "Name": ".300 Blackout TAC-TX",
+      "ShortName": ".300 TAC-TX",
+      "Description": "The .300 Blackout TAC-TX ammunition is a popular choice for hunting and defense applications. The TAC-TX has an all-copper design and specially engineered nose cavity. This results in rapid expansion, devastating energy transfer, and weight retention. Manufactured by Barnes."
+    },
+    "": {
+      "Name": ".300 Blackout TCX",
+      "ShortName": ".300 TCX",
+      "Description": "The .300 Blackout TCX (Total Copper X-panding) ammunition is a popular choice for hunting and defense applications. It has consistent penetration that meets or exceeds FBI standards, and expansion that reliably outperforms typical JHP (Jacketed HollowPoint) projectiles. Manufactured by Lehigh Defense."
     }
-    
     
   }
 }
