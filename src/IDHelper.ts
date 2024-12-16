@@ -524,6 +524,24 @@ export class IDHelper
     private AUG_A3: string = "63171672192e68c5460cebc5";
     private AUG_A3_BLK: string = "6718817435e3cfd9550d2c27";
 
+    //Assault Carbines
+    private ADAR_2_15: string = "5c07c60e0db834002330051f";
+    private KBP_9A_91: string = "644674a13d52156624001fbc";
+    private KBP_VSK_94: string = "645e0c6b3b381ede770e1cc9";
+    private RFB: string = "5f2a9575926fd9352339381f";
+    private TX_15: string = "5d43021ca4b9362eab4b5e25";
+    private OP_SKS: string = "587e02ff24597743df3deaeb";
+    private SKS: string = "574d967124597745970e7c94";
+    private VPO_101: string = "5c501a4d2e221602b412b540";
+    private VPO_136: string = "59e6152586f77473dc057aa1";
+    private VPO_209: string = "59e6687d86f77411d949b251";
+    private SAG_AK_545: string = "628b5638ad252a16da6dd245";
+    private SAG_AK_545_SHORT: string = "628b9c37a733087d0d7fe84b";
+    private SR_3M: string = "651450ce0e00edc794068371";
+    private AVT_40: string = "6410733d5dd49d77bd07847e";
+    private SVT_40: string = "643ea5b23db6f9f57107d9fd";
+
+
 
     public Weapons = {
         Pistols: [
@@ -661,6 +679,23 @@ export class IDHelper
             this.AUG_A1,
             this.AUG_A3,
             this.AUG_A3_BLK
+        ],
+        AssaultCarbines: [
+            this.ADAR_2_15,
+            this.KBP_9A_91,
+            this.KBP_VSK_94,
+            this.RFB,
+            this.TX_15,
+            this.OP_SKS,
+            this.SKS,
+            this.VPO_101,
+            this.VPO_136,
+            this.VPO_209,
+            this.SAG_AK_545,
+            this.SAG_AK_545_SHORT,
+            this.SR_3M,
+            this.AVT_40,
+            this.SVT_40
         ]
 
     }
