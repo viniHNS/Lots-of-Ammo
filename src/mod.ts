@@ -1,5 +1,6 @@
-import { DependencyContainer } from "tsyringe";
+/* eslint-disable @typescript-eslint/naming-convention */
 
+import { DependencyContainer } from "tsyringe";
 import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
 import { DatabaseServer } from "@spt/servers/DatabaseServer";
 import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
@@ -28,6 +29,9 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
 
     public postDBLoad(container: DependencyContainer): void
     {
+
+        const logger2 = container.resolve<ILogger>("WinstonLogger");
+
         // get database from server
         const databaseServer = container.resolve<DatabaseServer>("DatabaseServer");
 
@@ -72,6 +76,10 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         for (const magazines of Magazines9mm) 
         {
             magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new9mmAmmoId);
+            if (config.enableLogs)
+            {
+                logger2.info(`Added new ammo to the mag: ${magazines._name}`);
+            }
         }
 
         // Loop through all weapons and add the new ammo to the chamber
@@ -82,11 +90,19 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
 
             if (weapClass == "" || weapClass == null || type == "Node")
             {
+                if (config.enableLogs)
+                {
+                    logger2.warning(`Skipping ${weapons._name}`);
+                }
                 continue;
             }
             if (weapons._props.Caliber == caliber9mm)
             {
                 weapons._props.Chambers[0]._props.filters[0].Filter.push(...new9mmAmmoId);
+                if (config.enableLogs)
+                {
+                    logger2.info(`Added new ammo to the weapon: ${weapons._name}`);
+                }
             }
         }
 
