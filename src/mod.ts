@@ -13,6 +13,7 @@ import path from "path";
 import config from "../config/config.json"
 import { ItemHelper } from "@spt/helpers/ItemHelper";
 import { BaseClasses } from "@spt/models/enums/BaseClasses";
+import { ItemType } from "@spt/models/eft/common/tables/ITemplateItem";
 
 
 class Mod implements IPostDBLoadMod, IPreSptLoadMod
@@ -33,12 +34,37 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         // Get all the in-memory json found in /assets/database
         const tables: IDatabaseTables = databaseServer.getTables();
 
+        const new9mmAmmo = [
+            "675f634ff132d4b47f2c1281"
+        ]
+
+        const mags9mm = [
+            
+        ]
+
+        const caliber9mm = "Caliber9x19PARA";
+
+
+
        
         // Use the itemHelper class to assist us in getting only magazines
         // We are filtering all items to only those with a base class of MAGAZINE (5448bc234bdc2d3c308b4569)
         // const magazines = items.filter(x => itemHelper.isOfBaseclass(x._id, BaseClasses.MAGAZINE));
 
-        
+        for (const weapons of Object.values(tables.templates.items)) 
+        {
+            const weapClass: string = weapons._props.weapClass;
+            const type: ItemType = weapons._type;
+
+            if (weapClass == "" || weapClass == null || type == "Node")
+            {
+                continue;
+            }
+            if (weapons._props.Caliber == caliber9mm)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new9mmAmmo);
+            }
+        }
 
 
 
