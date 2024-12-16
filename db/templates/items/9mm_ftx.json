@@ -6,7 +6,7 @@
     "AmmoLifeTimeSec": 5,
     "AmmoTooltipClass": "Expansive",
     "AnimationVariantsNumber": 0,
-    "ArmorDamage": 25,
+    "ArmorDamage": 28,
     "ArmorDistanceDistanceDamage": {
       "x": 0,
       "y": 0,
@@ -86,7 +86,7 @@
     "NotShownInSlot": false,
     "PenetrationChanceObstacle": 0.1,
     "PenetrationDamageMod": 0,
-    "PenetrationPower": 8,
+    "PenetrationPower": 10,
     "PenetrationPowerDiviation": 0.8,
     "Prefab": {
       "path": "9mm_ftx.bundle",
