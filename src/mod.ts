@@ -14,7 +14,7 @@ import path from "path";
 import config from "../config/config.json"
 import { ItemHelper } from "@spt/helpers/ItemHelper";
 import { BaseClasses } from "@spt/models/enums/BaseClasses";
-import { ItemType } from "@spt/models/eft/common/tables/ITemplateItem";
+import { ITemplateItem, ItemType } from "@spt/models/eft/common/tables/ITemplateItem";
 
 
 class Mod implements IPostDBLoadMod, IPreSptLoadMod
@@ -41,44 +41,48 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         // Get all the in-memory json found in /assets/database
         const tables: IDatabaseTables = databaseServer.getTables();
 
-        const new9mmAmmoId = [
+        const new9mmAmmoId: string[] = [
             "675f634ff132d4b47f2c1281", "6760722b169af95328139b80", "6760a728fa36a05e723d69e7", "67606fd205e98fee67b22293"
         ]
 
-        const caliber9mm = "Caliber9x19PARA";
+        const new300BlkAmmoId: string[] = [
 
-        /*
-        const mags9mm = [
-            "624c3074dbbd335e8e6becf3", "630769c4962d0247b029dc60", "630767c37d50ff5e8a1ea71a", "5a7ad2e851dfba0016153692",
-            "5a718b548dc32e000d46d262", "63076701a987397c0816d21b", "5a718da68dc32e000d46d264", "5a718f958dc32e00094b97e7",
-            "5d2f213448f0355009199284", "5926c3b286f774640d189b6b", "5a351711c4a282000b1521a4", "5cadc2e0ae9215051e1c21e7",
-            "576a5ed62459771e9c2096cb", "5de8e8dafd6b4e6e2276dc32", "5de8ea8ffd6b4e6e2276dc35", "5de8eaadbbaf010b10528a6d",
-            "5de8eac42a78646d96665d91", "5c5db6552e2216001026119d", "5894a05586f774094708ef75", "5c5db6742e2216000f1b2852",
-            "5c5db6652e221600113fba51", "56d59948d2720bb7418b4582", "5c920e902e221644f31c3c99", "602286df23506e50807090c6",
-            "599860ac86f77436b225ed1a", "5c0673fb0db8340023300271", "5c0672ed0db834001b7353f3", "5998529a86f774647f44f421",
-            "66992713ae08c5c29e0c4f97", "6699271b9950f5f4cd060299", "669927203c4fda6471005cbe", "66992725ae08c5c29e0c4f9a",
-            "6699272a3c4fda6471005cc1", "668031ffe3e7eb26e8004cdd", "66866f4ec3d473265104f381", "66866f622a2296a8d9099639"
         ]
-        */
 
-        const default9mmId = "56d59d3ad2720bdb418b4577";
+        const caliber9mm: string = "Caliber9x19PARA";
+        const caliber300blk: string = "Caliber762x35";
+
+        const default9mmId: string = "56d59d3ad2720bdb418b4577";
+        const default300BlkId: string = "619636be6db0f2477964e710";
 
         // Object.values lets us grab the 'value' part as an array and ignore the 'key' part
-        const item = Object.values(tables.templates.items);
+        const item: ITemplateItem[]  = Object.values(tables.templates.items);
 
        
         // Use the itemHelper class to assist us in getting only magazines
         // We are filtering all items to only those with a base class of MAGAZINE (5448bc234bdc2d3c308b4569)
-        const Allmagazines = item.filter(x => itemHelper.isOfBaseclass(x._id, BaseClasses.MAGAZINE));
-        const Magazines9mm = Allmagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default9mmId));
+        const allMagazines: ITemplateItem[] = item.filter(x => itemHelper.isOfBaseclass(x._id, BaseClasses.MAGAZINE));
+        
+        const magazines9mm: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default9mmId));
+        const magazines300Blk: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default300BlkId));
 
-        // Loop through all magazines
-        for (const magazines of Magazines9mm) 
+        // Loop through all 9mm magazines
+        for (const magazines of magazines9mm) 
         {
             magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new9mmAmmoId);
             if (config.enableLogs)
             {
-                logger2.info(`Added new ammo to the mag: ${magazines._name}`);
+                logger2.info(`Added new ammo to the 9mm mag: ${magazines._name}`);
+            }
+        }
+
+        // Loop through all 300Blk magazines
+        for (const magazines of magazines300Blk) 
+        {
+            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new300BlkAmmoId);
+            if (config.enableLogs)
+            {
+                logger2.info(`Added new ammo to the 300Blk mag: ${magazines._name}`);
             }
         }
 
