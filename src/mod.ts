@@ -42,7 +42,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         const tables: IDatabaseTables = databaseServer.getTables();
 
         const new9mmAmmoId = [
-            "675f634ff132d4b47f2c1281"
+            "675f634ff132d4b47f2c1281", "6760722b169af95328139b80", "6760a728fa36a05e723d69e7", "67606fd205e98fee67b22293"
         ]
 
         const caliber9mm = "Caliber9x19PARA";

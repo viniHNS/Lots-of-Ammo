@@ -10,7 +10,31 @@
             ]
         },
         {
-            "key": "9mm_steel_case.bundle",
+            "key": "9mm_fmj_steel.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "9mm_hst.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "9mm_sp.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "nato_556_box.bundle",
             "dependencyKeys": [
                 "cubemaps",
 				"shaders",

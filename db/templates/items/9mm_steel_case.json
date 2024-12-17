@@ -89,7 +89,7 @@
     "PenetrationPower": 18,
     "PenetrationPowerDiviation": 0.8,
     "Prefab": {
-      "path": "9mm_steel_case.bundle.bundle",
+      "path": "9mm_fmj_steel.bundle",
       "rcid": ""
     },
     "ProjectileCount": 1,

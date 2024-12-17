@@ -15,10 +15,10 @@
       "ShortName": "9mm Steel",
       "Description": "The 9x19mm Tula Steel Case ammunition is a popular choice for range training. The steel cases are coated with a polymer layer to ensure \"reliable\" feeding and extraction. Manufactured by Tula."
     },
-    "": {
+    "6760a728fa36a05e723d69e7": {
       "Name": "9x19mm Soft Point (SP)",
       "ShortName": "9x19mm SP",
-      "Description": "A 9x19mm Soft Point (SP) ammunition is a popular choice for hunting. The soft point bullet design ensures reliable expansion and penetration. "
+      "Description": "A 9x19mm Soft Point (SP) ammunition is a popular choice for self-defense. The soft point bullet design ensures reliable expansion and penetration. "
     },
     "": {
       "Name": ".300 Blackout TAC-TX",
@@ -29,6 +29,11 @@
       "Name": ".300 Blackout TCX",
       "ShortName": ".300 TCX",
       "Description": "The .300 Blackout TCX (Total Copper X-panding) ammunition is a popular choice for hunting and defense applications. It has consistent penetration that meets or exceeds FBI standards, and expansion that reliably outperforms typical JHP (Jacketed HollowPoint) projectiles. Manufactured by Lehigh Defense."
+    },
+    "6760ad706c5e0d271ce34f5a": {
+      "Name": "5.56x45mm M855 Ammo Can (420 pcs)",
+      "ShortName": "M855 Ammo Can",
+      "Description": "The 5.56x45mm M855 Ammo Can contains 420 rounds of 5.56x45mm M855 ammunition. The ammo is packed in a durable steel ammo can for long-term storage."
     }
     
   }

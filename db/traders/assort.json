@@ -12,6 +12,27 @@
         }
       },
       {
+        "_id": "6760af9e190d85e4f047a7c3",
+        "_tpl": "6760ad706c5e0d271ce34f5a",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 16
+        }
+      },
+      {
+        "_id": "6760b02b5fe0e494bee685fc",
+        "_tpl": "54527a984bdc2d4e668b4567",
+        "location": 0,
+        "parentId": "6760af9e190d85e4f047a7c3",
+        "slotId": "cartridges",
+        "upd": {
+          "StackObjectsCount": 420
+        }
+      },
+      
+      {
         "_id": "676072cce6dc4e098c3c5df1",
         "_tpl": "6760722b169af95328139b80",
         "parentId": "hideout",
@@ -32,6 +53,14 @@
           }
         ]
       ],
+      "6760af9e190d85e4f047a7c3": [
+        [
+          {
+            "count": 421,
+            "_tpl": "5696686a4bdc2da3298b456a"
+          }
+        ]
+      ],
       "676072cce6dc4e098c3c5df1": [
         [
           {
@@ -43,13 +72,11 @@
     },
     "loyal_level_items": {
       "675f659a3d1e3b772239d5ec": 3,
-      "676072cce6dc4e098c3c5df1": 3
+      "676072cce6dc4e098c3c5df1": 3,
+      "6760af9e190d85e4f047a7c3": 4
 
     }
   },
-
-
-
 
 
   "54cb50c76803fa8b248b4571": {
@@ -63,6 +90,16 @@
           "UnlimitedCount": false,
           "StackObjectsCount": 30124
         }
+      },
+      {
+        "_id": "6760a7f8e0bdb804e3482bb3",
+        "_tpl": "6760a728fa36a05e723d69e7",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 10623
+        }
       }
       
     ],
@@ -74,10 +111,19 @@
             "_tpl": "5449016a4bdc2d6f028b456f"
           }
         ]
+      ],
+      "6760a7f8e0bdb804e3482bb3": [
+        [
+          {
+            "count": 51,
+            "_tpl": "5449016a4bdc2d6f028b456f"
+          }
+        ]
       ]
     },
     "loyal_level_items": {
-      "676070af3ef3151e333bedbb": 1
+      "676070af3ef3151e333bedbb": 1,
+      "6760a7f8e0bdb804e3482bb3": 1
     }
   }
 }
