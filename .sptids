@@ -48,7 +48,16 @@
             "ShortName": ".300 TAC-TX",
             "Type": "Ammo",
             "Caliber": "Caliber762x35",
-            "Damage": 75
+            "Damage": 85
+        }
+    },
+    "6761830c70f9c039ee0e73f2": {
+        "en": {
+            "Name": ".300 Blackout TCX",
+            "ShortName": ".300 TCX",
+            "Type": "Ammo",
+            "Caliber": "Caliber762x35",
+            "Damage": 91
         }
     }
 
