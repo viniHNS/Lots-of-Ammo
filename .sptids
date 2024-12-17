@@ -41,6 +41,15 @@
             "ShortName": "M855 Ammo Can",
             "Type": "Item"
         }
+    },
+    "6761690ac456a89d5bb0d14b": {
+        "en": {
+            "Name": ".300 Blackout TAC-TX",
+            "ShortName": ".300 TAC-TX",
+            "Type": "Ammo",
+            "Caliber": "Caliber762x35",
+            "Damage": 75
+        }
     }
 
 }
