@@ -30,7 +30,7 @@
       "y": 0,
       "z": 0
     },
-    "Damage": 75,
+    "Damage": 85,
     "Description": "patron_762x35_blackout",
     "Deterioration": 1,
     "DiscardLimit": -1,
@@ -86,10 +86,10 @@
     "NotShownInSlot": false,
     "PenetrationChanceObstacle": 0.2,
     "PenetrationDamageMod": 0.075,
-    "PenetrationPower": 22,
+    "PenetrationPower": 20,
     "PenetrationPowerDiviation": 0.21,
     "Prefab": {
-      "path": "assets/content/items/ammo/patrons/patron_762x35_vmax.bundle",
+      "path": ".bundle",
       "rcid": ""
     },
     "ProjectileCount": 1,
