@@ -1,5 +1,5 @@
 {
-    "675f634ff132d4b47f2c1281":{
+    "675f634ff132d4b47f2c1281": {
         "en": {
             "Name":"9x19mm Hornady Critical Defense FTx®",
             "ShortName": "9mm FTx",
@@ -7,5 +7,40 @@
             "Caliber": "9x19PARA",
             "Damage": 83
         }
+    },
+    "6760722b169af95328139b80": {
+        "en": {
+            "Name":"9x19mm Federal HST",
+            "ShortName": "9mm HST",
+            "Type": "Ammo",
+            "Caliber": "9x19PARA",
+            "Damage": 87
+        }
+    },
+    "67606fd205e98fee67b22293": {
+        "en": {
+            "Name":"9x19mm Tula",
+            "ShortName": "9mm Tula",
+            "Type": "Ammo",
+            "Caliber": "9x19PARA",
+            "Damage": 58
+        }
+    },
+    "6760a728fa36a05e723d69e7": {
+        "en": {
+            "Name":"9x19mm Soft Point (SP)",
+            "ShortName": "9mm SP",
+            "Type": "Ammo",
+            "Caliber": "9x19PARA",
+            "Damage": 64
+        }
+    },
+    "6760ad706c5e0d271ce34f5a": {
+        "en": {
+            "Name":"5.56x45mm M855 Ammo Can (420 pcs)",
+            "ShortName": "M855 Ammo Can",
+            "Type": "Item"
+        }
     }
+
 }
