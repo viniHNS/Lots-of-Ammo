@@ -9,10 +9,10 @@ This is a mod for [SPT](https://www.sp-tarkov.com "The main goal of the project 
 Adds some new ammunition to the game:
 
 - 9x19mm
-  - 9x19mm FTX
-  - 9x19mm FMJ steel case
-  - 9x19mm HST
-  - 9x19mm SP
+  - 9x19mm Hornady Critical Defense FTx®
+  - 9x19mm Tula FMJ steel case
+  - 9x19mm Federal HST
+  - 9x19mm Soft Point (SP)
 
 - .300 Blackout
   - .300 Blackout JHP
