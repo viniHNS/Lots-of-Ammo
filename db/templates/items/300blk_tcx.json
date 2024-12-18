@@ -89,7 +89,7 @@
     "PenetrationPower": 16,
     "PenetrationPowerDiviation": 0.21,
     "Prefab": {
-      "path": ".bundle",
+      "path": "300blk_tcx.bundle",
       "rcid": ""
     },
     "ProjectileCount": 1,
