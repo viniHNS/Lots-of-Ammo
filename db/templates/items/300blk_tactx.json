@@ -89,7 +89,7 @@
     "PenetrationPower": 20,
     "PenetrationPowerDiviation": 0.21,
     "Prefab": {
-      "path": ".bundle",
+      "path": "300blk_tactx.bundle",
       "rcid": ""
     },
     "ProjectileCount": 1,
