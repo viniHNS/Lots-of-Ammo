@@ -46,7 +46,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         ]
 
         const new300BlkAmmoId: string[] = [
-
+            "6761690ac456a89d5bb0d14b", "6761830c70f9c039ee0e73f2"
         ]
 
         const caliber9mm: string = "Caliber9x19PARA";
@@ -66,13 +66,16 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         const magazines9mm: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default9mmId));
         const magazines300Blk: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default300BlkId));
 
+        const weapons9mm: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber9mm);
+        const weapons300Blk: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber300blk);
+
         // Loop through all 9mm magazines
         for (const magazines of magazines9mm) 
         {
             magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new9mmAmmoId);
             if (config.enableLogs)
             {
-                logger2.info(`Added new ammo to the 9mm mag: ${magazines._name}`);
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 9mm mag: ${magazines._name}`);
             }
         }
 
@@ -82,33 +85,34 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new300BlkAmmoId);
             if (config.enableLogs)
             {
-                logger2.info(`Added new ammo to the 300Blk mag: ${magazines._name}`);
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 300Blk mag: ${magazines._name}`);
             }
         }
 
         // Loop through all weapons and add the new ammo to the chamber
-        for (const weapons of Object.values(tables.templates.items)) 
+        for (const weapons of weapons9mm) 
         {
-            const weapClass: string = weapons._props.weapClass;
-            const type: ItemType = weapons._type;
-
-            if (weapClass == "" || weapClass == null || type == "Node")
-            {
-                if (config.enableLogs)
-                {
-                    logger2.warning(`Skipping ${weapons._name}`);
-                }
-                continue;
-            }
-            if (weapons._props.Caliber == caliber9mm)
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
             {
                 weapons._props.Chambers[0]._props.filters[0].Filter.push(...new9mmAmmoId);
-                if (config.enableLogs)
-                {
-                    logger2.info(`Added new ammo to the weapon: ${weapons._name}`);
+                if (config.enableLogs) {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
                 }
             }
         }
+
+        for (const weapons of weapons300Blk) 
+        {
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new300BlkAmmoId);
+                if (config.enableLogs) {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+                }
+            }
+        }
+
+
 
         // -----------------------------------------------------------------------------------------------------------------------------------
 
