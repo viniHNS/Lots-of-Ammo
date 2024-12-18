@@ -15,7 +15,6 @@ Adds some new ammunition to the game:
   - 9x19mm Soft Point (SP)
 
 - .300 Blackout
-  - .300 Blackout JHP
   - .300 Blackout TCX
   - .300 Blackout TACTX
 
