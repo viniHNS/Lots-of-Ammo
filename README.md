@@ -19,4 +19,5 @@ Adds some new ammunition to the game:
   - .300 Blackout TCX
   - .300 Blackout TACTX
 
-  
+- Ammo box
+  - 5.56x45mm M855 Ammo Can (420 pcs)
