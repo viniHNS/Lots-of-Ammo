@@ -73,6 +73,15 @@
             "Caliber": "Caliber762x35",
             "Damage": 91
         }
+    },
+    "67670e9615726ef8b12a8388": {
+        "en": {
+            "Name": ".357 Magnum FMJ +P+",
+            "ShortName": "FMJ +P+",
+            "Type": "Ammo",
+            "Caliber": "Caliber9x33R",
+            "Damage": 67
+        }
     }
 
 }
