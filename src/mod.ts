@@ -45,15 +45,21 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             "675f634ff132d4b47f2c1281", "6760722b169af95328139b80", "6760a728fa36a05e723d69e7", "67606fd205e98fee67b22293"
         ]
 
+        const new357AmmoId: string[] = [
+            "67670e9615726ef8b12a8388"
+        ];
+
         const new300BlkAmmoId: string[] = [
             "6761690ac456a89d5bb0d14b", "6761830c70f9c039ee0e73f2"
         ]
 
         const caliber9mm: string = "Caliber9x19PARA";
         const caliber300blk: string = "Caliber762x35";
+        const caliber357: string = "Caliber9x33R";
 
         const default9mmId: string = "56d59d3ad2720bdb418b4577";
         const default300BlkId: string = "619636be6db0f2477964e710";
+        const default357Id: string = "62330b3ed4dc74626d570b95";
 
         // Object.values lets us grab the 'value' part as an array and ignore the 'key' part
         const item: ITemplateItem[]  = Object.values(tables.templates.items);
@@ -65,9 +71,11 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         
         const magazines9mm: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default9mmId));
         const magazines300Blk: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default300BlkId));
+        const magazines357: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default357Id));
 
         const weapons9mm: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber9mm);
         const weapons300Blk: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber300blk);
+        const weapons357: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber357);
 
         // Loop through all 9mm magazines
         for (const magazines of magazines9mm) 
@@ -89,13 +97,32 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             }
         }
 
+        // Loop through all 357 magazines
+        for (const magazines of magazines357) 
+        {
+            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new357AmmoId);
+            if (config.enableLogs)
+            {
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 357 mag: ${magazines._name}`);
+            }
+            if (magazines._id === "619f54a1d25cbd424731fb99") // Chiappa Rhino .357 6-round cylinder
+            {
+                magazines._props.Slots?.forEach(slot => 
+                {
+                    slot?._props?.filters?.[0]?.Filter?.push(...new357AmmoId);
+                });
+            }
+                
+        }
+
         // Loop through all weapons and add the new ammo to the chamber
         for (const weapons of weapons9mm) 
         {
             if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
             {
                 weapons._props.Chambers[0]._props.filters[0].Filter.push(...new9mmAmmoId);
-                if (config.enableLogs) {
+                if (config.enableLogs) 
+                {
                     logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
                 }
             }
@@ -106,16 +133,27 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
             {
                 weapons._props.Chambers[0]._props.filters[0].Filter.push(...new300BlkAmmoId);
-                if (config.enableLogs) {
+                if (config.enableLogs)
+                {
                     logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
                 }
             }
         }
 
+        for (const weapons of weapons357) 
+        {
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new357AmmoId);
+                if (config.enableLogs) {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+                }
+            }
+            
+        }
+
         //add oil filter supressor to the makarov threaded barrel
         tables.templates.items["579204f224597773d619e051"]._props.Slots[1]._props.filters[0].Filter.push("6766bdb3e654a22d0549ec85")
-
-
 
         // -----------------------------------------------------------------------------------------------------------------------------------
 
