@@ -14,7 +14,7 @@ import path from "path";
 import config from "../config/config.json"
 import { ItemHelper } from "@spt/helpers/ItemHelper";
 import { BaseClasses } from "@spt/models/enums/BaseClasses";
-import { ITemplateItem, ItemType } from "@spt/models/eft/common/tables/ITemplateItem";
+import { ITemplateItem } from "@spt/models/eft/common/tables/ITemplateItem";
 
 
 class Mod implements IPostDBLoadMod, IPreSptLoadMod
@@ -111,6 +111,9 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
                 }
             }
         }
+
+        //add oil filter supressor to the makarov threaded barrel
+        tables.templates.items["579204f224597773d619e051"]._props.Slots[1]._props.filters[0].Filter.push("6766bdb3e654a22d0549ec85")
 
 
 
