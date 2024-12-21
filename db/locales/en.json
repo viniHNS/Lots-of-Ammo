@@ -44,6 +44,11 @@
       "Name": "Oil Filter Supressor",
       "ShortName": "Oil Filter",
       "Description": "The Oil Filter Supressor is a popular choice for home-made suppressors. The oil filter is modified to accept a firearm barrel and baffles. The suppressor is effective at reducing the sound of a firearm, but is not as effective as a professionally manufactured suppressor."
+    },
+    "67670e9615726ef8b12a8388": {
+      "Name": ".357 Magnum FMJ +P+",
+      "ShortName": "FMJ +P+",
+      "Description": "An American-made high-power Experimental .357 Magnum revolver cartridge manufactured by Bowman Armaments."
     }
     
   }
