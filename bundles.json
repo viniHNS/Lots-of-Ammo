@@ -56,6 +56,22 @@
 				"shaders",
 				"assets/commonassets/physics/physicsmaterials.bundle"
             ]
+        },
+        {
+            "key": "can_supressor.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "wooden_box_556.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
         }
     ]
 }
