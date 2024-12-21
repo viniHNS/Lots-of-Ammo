@@ -51,6 +51,27 @@
           "StackObjectsCount": 420
         }
       },
+
+      {
+        "_id": "6766bcedef8be25e247148cf",
+        "_tpl": "6766bb770e1c2aa50294916f",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 4
+        }
+      },
+      {
+        "_id": "6766bd149c5caab6aaa340c0",
+        "_tpl": "54527a984bdc2d4e668b4567",
+        "location": 0,
+        "parentId": "6766bcedef8be25e247148cf",
+        "slotId": "cartridges",
+        "upd": {
+          "StackObjectsCount": 1200
+        }
+      },
       
       {
         "_id": "676072cce6dc4e098c3c5df1",
@@ -69,6 +90,15 @@
         [
           {
             "count": 2,
+            "_tpl": "5696686a4bdc2da3298b456a"
+          }
+        ]
+      ],
+      
+      "6766bcedef8be25e247148cf": [
+        [
+          {
+            "count": 1263,
             "_tpl": "5696686a4bdc2da3298b456a"
           }
         ]
@@ -110,10 +140,10 @@
     "loyal_level_items": {
       "675f659a3d1e3b772239d5ec": 3,
       "676072cce6dc4e098c3c5df1": 3,
-      "6760af9e190d85e4f047a7c3": 4,
+      "6760af9e190d85e4f047a7c3": 2,
       "67616a9097df923f011b6689": 2,
-      "6761843801b2f89baeff29c5": 3
-
+      "6761843801b2f89baeff29c5": 3,
+      "6766bcedef8be25e247148cf": 3
     }
   },
 
@@ -163,6 +193,35 @@
     "loyal_level_items": {
       "676070af3ef3151e333bedbb": 1,
       "6760a7f8e0bdb804e3482bb3": 1
+    }
+  },
+
+
+  "5a7c2eca46aef81a7ca2145d": {
+    "items": [
+      {
+        "_id": "6766bed80dac2af0b29025b5",
+        "_tpl": "6766bdb3e654a22d0549ec85",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 103
+        }
+      }
+    ],
+    "barter_scheme": {
+      "6766bed80dac2af0b29025b5": [
+        [
+          {
+            "count": 10412,
+            "_tpl": "5449016a4bdc2d6f028b456f"
+          }
+        ]
+      ]
+    },
+    "loyal_level_items": {
+      "6766bed80dac2af0b29025b5": 1
     }
   }
 }
