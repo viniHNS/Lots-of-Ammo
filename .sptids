@@ -42,6 +42,20 @@
             "Type": "Item"
         }
     },
+    "6766bb770e1c2aa50294916f": {
+        "en": {
+            "Name": "5.56x45mm M855 Ammo Box (1200 pcs)",
+            "ShortName": "M855 Ammo Box",
+            "Type": "Item"
+        }
+    },
+    "6766bdb3e654a22d0549ec85": {
+        "en": {
+            "Name": "Oil Filter Supressor",
+            "ShortName": "Oil Filter",
+            "Type": "Item"
+        }
+    },
     "6761690ac456a89d5bb0d14b": {
         "en": {
             "Name": ".300 Blackout TAC-TX",
