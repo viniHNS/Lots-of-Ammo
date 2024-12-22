@@ -18,5 +18,14 @@ Adds some new ammunition to the game:
   - .300 Blackout TCX
   - .300 Blackout TACTX
 
+- .338 Lapua Magnum
+  - .338 Lapua Magnum SP
+
+- 7.62x51mm
+  - 7.62x51mm M118LR
+
+- .357 Magnum
+  - .357 Magnum FMJ +P+
+
 - Ammo box
   - 5.56x45mm M855 Ammo Can (420 pcs)
