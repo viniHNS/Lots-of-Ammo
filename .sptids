@@ -82,6 +82,24 @@
             "Caliber": "Caliber9x33R",
             "Damage": 67
         }
+    },
+    "6767352b148c068905b8a911": {
+        "en": {
+            "Name": ".338 Lapua Magnum SP",
+            "ShortName": ".338 SP",
+            "Type": "Ammo",
+            "Caliber": "Caliber86x70",
+            "Damage": 150
+        }
+    },
+    "67683cf96dd721014a55c205": {
+        "en": {
+            "Name": "7.62x51mm M118LR Match",
+            "ShortName": "M118LR Match",
+            "Type": "Ammo",
+            "Caliber": "Caliber762x51",
+            "Damage": 86
+        }
     }
 
 }

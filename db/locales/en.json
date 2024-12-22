@@ -49,6 +49,16 @@
       "Name": ".357 Magnum FMJ +P+",
       "ShortName": "FMJ +P+",
       "Description": "An American-made high-power Experimental .357 Magnum revolver cartridge manufactured by Bowman Armaments."
+    },
+    "6767352b148c068905b8a911": {
+      "Name": ".338 Lapua Magnum SP",
+      "ShortName": ".338 SP",
+      "Description": "A .338 Lapua Magnum (8.6x70mm) cartridge with a 16.2-gram lead core bullet featuring a soft point and a brass jacket, housed in a brass case. Designed primarily for hunting and long-range precision shooting, this cartridge offers exceptional stopping power and devastating terminal performance upon impact. The soft point design ensures controlled expansion, maximizing tissue damage while maintaining deep penetration. Although highly effective against unarmored and lightly armored targets, the bullet's design also increases the likelihood of ricochets when striking hard surfaces."
+    },
+    "67683cf96dd721014a55c205": {
+      "Name": "7.62x51mm M118LR Match",
+      "ShortName": "M118LR Match",
+      "Description": "A 7.62x51mm cartridge with a 175-grain Boat Tail Hollow Point (BTHP) bullet in a brass case, designed for long-range precision shooting. Known for its accuracy and consistency, it excels in military sniper operations and competitive shooting."
     }
     
   }

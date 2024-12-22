@@ -53,13 +53,25 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             "6761690ac456a89d5bb0d14b", "6761830c70f9c039ee0e73f2"
         ]
 
+        const new338LapuaAmmoId: string[] = [
+            "6767352b148c068905b8a911"
+        ];
+
+        const new762x51AmmoId: string[] = [
+            "67683cf96dd721014a55c205"
+        ];
+
         const caliber9mm: string = "Caliber9x19PARA";
         const caliber300blk: string = "Caliber762x35";
         const caliber357: string = "Caliber9x33R";
+        const caliber338lapua: string = "Caliber86x70";
+        const caliber762x51: string = "Caliber762x51";
 
         const default9mmId: string = "56d59d3ad2720bdb418b4577";
         const default300BlkId: string = "619636be6db0f2477964e710";
         const default357Id: string = "62330b3ed4dc74626d570b95";
+        const default338lapuaId: string = "5fc275cf85fd526b824a571a";
+        const default762x51Id: string = "58dd3ad986f77403051cba8f";
 
         // Object.values lets us grab the 'value' part as an array and ignore the 'key' part
         const item: ITemplateItem[]  = Object.values(tables.templates.items);
@@ -72,10 +84,14 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         const magazines9mm: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default9mmId));
         const magazines300Blk: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default300BlkId));
         const magazines357: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default357Id));
+        const magazines338lapua: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default338lapuaId));
+        const magazines762x51: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default762x51Id));
 
         const weapons9mm: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber9mm);
         const weapons300Blk: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber300blk);
         const weapons357: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber357);
+        const weapons338lapua: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber338lapua);
+        const weapons762x51: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber762x51);
 
         // Loop through all 9mm magazines
         for (const magazines of magazines9mm) 
@@ -97,6 +113,16 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             }
         }
 
+        // Loop through all 338Lapua magazines
+        for (const magazines of magazines338lapua) 
+        {
+            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new338LapuaAmmoId);
+            if (config.enableLogs)
+            {
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 338Lapua mag: ${magazines._name}`);
+            }
+        }
+
         // Loop through all 357 magazines
         for (const magazines of magazines357) 
         {
@@ -111,8 +137,17 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
                 {
                     slot?._props?.filters?.[0]?.Filter?.push(...new357AmmoId);
                 });
+            }    
+        }
+
+        // Loop through all 762x51 magazines
+        for (const magazines of magazines762x51) 
+        {
+            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new762x51AmmoId);
+            if (config.enableLogs)
+            {
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 762x51 mag: ${magazines._name}`);
             }
-                
         }
 
         // Loop through all weapons and add the new ammo to the chamber
@@ -140,16 +175,40 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             }
         }
 
+        for (const weapons of weapons338lapua) 
+        {
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new338LapuaAmmoId);
+                if (config.enableLogs)
+                {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+                }
+            }
+        }
+
         for (const weapons of weapons357) 
         {
             if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
             {
                 weapons._props.Chambers[0]._props.filters[0].Filter.push(...new357AmmoId);
-                if (config.enableLogs) {
+                if (config.enableLogs) 
+                {
                     logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
                 }
             }
-            
+        }
+
+        for (const weapons of weapons762x51) 
+        {
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new762x51AmmoId);
+                if (config.enableLogs) 
+                {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+                }
+            }
         }
 
         //add oil filter supressor to the makarov threaded barrel

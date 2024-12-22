@@ -11,6 +11,18 @@
           "StackObjectsCount": 1796
         }
       },
+
+      {
+        "_id": "67683f2a3224cb2d84aee1b2",
+        "_tpl": "67683cf96dd721014a55c205",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 654
+        }
+      },
+
       {
         "_id": "6767113361c08e09300ebd5b", 
         "_tpl": "67670e9615726ef8b12a8388",
@@ -105,6 +117,15 @@
         ]
       ],
 
+      "67683f2a3224cb2d84aee1b2": [
+        [
+          {
+            "count": 3,
+            "_tpl": "5696686a4bdc2da3298b456a"
+          }
+        ]
+      ],
+
       "6767113361c08e09300ebd5b": [
         [
           {
@@ -163,7 +184,8 @@
       "67616a9097df923f011b6689": 2,
       "6761843801b2f89baeff29c5": 3,
       "6766bcedef8be25e247148cf": 3,
-      "6767113361c08e09300ebd5b": 2
+      "6767113361c08e09300ebd5b": 2,
+      "67683f2a3224cb2d84aee1b2": 3
     }
   },
 
@@ -178,6 +200,16 @@
         "upd": {
           "UnlimitedCount": false,
           "StackObjectsCount": 30124
+        }
+      },
+      {
+        "_id": "67673683e728cc6d928ac245",
+        "_tpl": "6767352b148c068905b8a911",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 215
         }
       },
       {
@@ -208,11 +240,20 @@
             "_tpl": "5449016a4bdc2d6f028b456f"
           }
         ]
+      ],
+      "67673683e728cc6d928ac245": [
+        [
+          {
+            "count": 901,
+            "_tpl": "5449016a4bdc2d6f028b456f"
+          }
+        ]
       ]
     },
     "loyal_level_items": {
       "676070af3ef3151e333bedbb": 1,
-      "6760a7f8e0bdb804e3482bb3": 1
+      "6760a7f8e0bdb804e3482bb3": 1,
+      "67673683e728cc6d928ac245": 3
     }
   },
 
