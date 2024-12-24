@@ -43,7 +43,19 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
 
         const new9mmAmmoId: string[] = [
             "675f634ff132d4b47f2c1281", "6760722b169af95328139b80", "6760a728fa36a05e723d69e7", "67606fd205e98fee67b22293"
-        ]
+        ];
+
+        const new12gaugeAmmoId: string[] = [
+            "67688d2f4c7b7d3afcf1f36e"
+        ];
+
+        const new50aeAmmoId: string[] = [
+            "676a0831faeabbb1a7dc58f8"
+        ];
+
+        const new556AmmoId: string[] = [
+            "67689886d281a6080adbdb51"
+        ];
 
         const new357AmmoId: string[] = [
             "67670e9615726ef8b12a8388"
@@ -58,7 +70,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         ];
 
         const new762x51AmmoId: string[] = [
-            "67683cf96dd721014a55c205"
+            "67683cf96dd721014a55c205", "676ac1b09ccda4ddc5b1ab96"
         ];
 
         const caliber9mm: string = "Caliber9x19PARA";
@@ -66,12 +78,18 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         const caliber357: string = "Caliber9x33R";
         const caliber338lapua: string = "Caliber86x70";
         const caliber762x51: string = "Caliber762x51";
+        const caliber12gauge: string = "Caliber12g";
+        const caliber556: string = "Caliber556x45NATO";
+        const caliber50ae: string = "Caliber127x33";
 
         const default9mmId: string = "56d59d3ad2720bdb418b4577";
         const default300BlkId: string = "619636be6db0f2477964e710";
         const default357Id: string = "62330b3ed4dc74626d570b95";
         const default338lapuaId: string = "5fc275cf85fd526b824a571a";
         const default762x51Id: string = "58dd3ad986f77403051cba8f";
+        const default12gaugeId: string = "560d5e524bdc2d25448b4571";
+        const default556Id: string = "54527a984bdc2d4e668b4567";
+        const default50aeId: string = "668fe62ac62660a5d8071446";
 
         // Object.values lets us grab the 'value' part as an array and ignore the 'key' part
         const item: ITemplateItem[]  = Object.values(tables.templates.items);
@@ -86,12 +104,18 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         const magazines357: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default357Id));
         const magazines338lapua: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default338lapuaId));
         const magazines762x51: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default762x51Id));
+        const magazines12gauge: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default12gaugeId));
+        const magazines556: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default556Id));
+        const magazines50ae: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default50aeId));
 
         const weapons9mm: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber9mm);
         const weapons300Blk: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber300blk);
         const weapons357: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber357);
         const weapons338lapua: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber338lapua);
         const weapons762x51: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber762x51);
+        const weapons12gauge: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber12gauge);
+        const weapons556: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber556);
+        const weapons50ae: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber50ae);
 
         // Loop through all 9mm magazines
         for (const magazines of magazines9mm) 
@@ -150,6 +174,36 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             }
         }
 
+        // Loop through all 12gauge magazines
+        for (const magazines of magazines12gauge) 
+        {
+            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new12gaugeAmmoId);
+            if (config.enableLogs)
+            {
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 12gauge mag: ${magazines._name}`);
+            }
+        }
+
+        // Loop through all 556 magazines
+        for (const magazines of magazines556) 
+        {
+            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new556AmmoId);
+            if (config.enableLogs)
+            {
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 556 mag: ${magazines._name}`);
+            }
+        }
+
+        // Loop through all 50ae magazines
+        for (const magazines of magazines50ae) 
+        {
+            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new50aeAmmoId);
+            if (config.enableLogs)
+            {
+                logger2.debug(`[Lots of Ammo] Added new ammo to the 50ae mag: ${magazines._name}`);
+            }
+        }
+
         // Loop through all weapons and add the new ammo to the chamber
         for (const weapons of weapons9mm) 
         {
@@ -157,6 +211,46 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             {
                 weapons._props.Chambers[0]._props.filters[0].Filter.push(...new9mmAmmoId);
                 if (config.enableLogs) 
+                {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+                }
+            }
+        }
+
+        for (const weapons of weapons556)
+        {
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new556AmmoId);
+                if (config.enableLogs)
+                {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+                }
+            }
+        }
+
+        for (const weapons of weapons12gauge)
+        {
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new12gaugeAmmoId);
+                if (config.enableLogs)
+                {
+                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+                }
+                if (weapons?._props?.Chambers?.[1])
+                {
+                    weapons._props.Chambers[1]._props.filters[0].Filter.push(...new12gaugeAmmoId);
+                }
+            }
+        }
+
+        for (const weapons of weapons50ae)
+        {
+            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
+            {
+                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new50aeAmmoId);
+                if (config.enableLogs)
                 {
                     logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
                 }

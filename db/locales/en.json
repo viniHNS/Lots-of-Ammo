@@ -59,6 +59,26 @@
       "Name": "7.62x51mm M118LR Match",
       "ShortName": "M118LR Match",
       "Description": "A 7.62x51mm cartridge with a 175-grain Boat Tail Hollow Point (BTHP) bullet in a brass case, designed for long-range precision shooting. Known for its accuracy and consistency, it excels in military sniper operations and competitive shooting."
+    },
+    "67688d2f4c7b7d3afcf1f36e": {
+      "Name": "12/70 7mm Buckshot Brass Case",
+      "ShortName": "Brass",
+      "Description": "A 12/70 buckshot with a brass case and a brass head. The brass case is reloadable and offers better corrosion resistance than steel cases. The brass head ensures reliable extraction and feeding in shotguns."
+    },
+    "67689886d281a6080adbdb51": {
+      "Name": "5.56x45mm Polymer Case", 
+      "ShortName": "Polymer",
+      "Description": "A 5.56x45mm cartridge with a polymer case. The polymer case is lightweight and corrosion-resistant, making it an excellent choice for training and range shooting."
+    },
+    "676a0831faeabbb1a7dc58f8": {
+      "Name": ".50 AE AP", 
+      "ShortName": "AP",
+      "Description": "A .50 Action Express AP cartridge (12.7x33mm) with a 300 grain bullet featuring a hardened steel core and a brass jacket, housed in a brass case. One of the most powerful unitary pistol cartridges in the world and has a significant lethality."
+    },
+    "676ac1b09ccda4ddc5b1ab96": {
+      "Name": "7.62x51mm M80A1", 
+      "ShortName": "M80A1",
+      "Description": "A 7.62x51mm NATO M80A1 cartridge with a 9.6-gram enhanced performance bullet featuring a copper alloy core and a steel penetrator tip, encased in a copper jacket and housed in a brass case. This cartridge was developed as an upgrade to the standard M80 round, designed to deliver improved penetration, consistency, and reduced environmental impact by eliminating the use of lead in the core. It provides exceptional performance against light cover, intermediate barriers, and modern ballistic body armor while maintaining reliable accuracy."
     }
     
   }
