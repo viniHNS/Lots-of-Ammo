@@ -6,6 +6,10 @@ This is a mod for [SPT](https://www.sp-tarkov.com "The main goal of the project 
 
 ## What does this mod do?
 
+Adds some attachments to the game:
+
+- Oil filter suppressor for PM(t)
+
 Adds some new ammunition to the game:
 
 - 9x19mm
@@ -13,6 +17,9 @@ Adds some new ammunition to the game:
   - 9x19mm Tula FMJ steel case
   - 9x19mm Federal HST
   - 9x19mm Soft Point (SP)
+
+- 12/70
+  - 12/70 Brass Buckshot
 
 - .300 Blackout
   - .300 Blackout TCX
@@ -23,6 +30,10 @@ Adds some new ammunition to the game:
 
 - 7.62x51mm
   - 7.62x51mm M118LR
+  - 7.62x51mm M80A1
+
+- 5.56x45mm
+  - 5.56x45mm Polymer Case
 
 - .357 Magnum
   - .357 Magnum FMJ +P+
