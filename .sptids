@@ -100,6 +100,38 @@
             "Caliber": "Caliber762x51",
             "Damage": 86
         }
+    },
+    "67688d2f4c7b7d3afcf1f36e": {
+        "en": {
+            "Name": "12/70 Brass Buckshot",
+            "ShortName": "Brass Buckshot",
+            "Type": "Ammo",
+            "Caliber": "Caliber12ga"
+        }
+    },
+    "67689886d281a6080adbdb51": {
+        "en": {
+            "Name": "5.56x45mm Polymer case",
+            "ShortName": "Polymer case",
+            "Type": "Ammo",
+            "Caliber": "Caliber556x45NATO"
+        }
+    },
+    "676a0831faeabbb1a7dc58f8": {
+        "en": {
+            "Name": ".50 AE AP",
+            "ShortName": "AP",
+            "Type": "Ammo",
+            "Caliber": "Caliber127x33"
+        }
+    },
+    "676ac1b09ccda4ddc5b1ab96": {
+        "en": {
+            "Name": "7.62x51mm M80A1",
+            "ShortName": "M80A1",
+            "Type": "Ammo",
+            "Caliber": "Caliber762x51"
+        }
     }
 
 }
