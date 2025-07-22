@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/brace-style */
 /* eslint-disable @typescript-eslint/naming-convention */
 
 import { DependencyContainer } from "tsyringe";
@@ -7,404 +8,300 @@ import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
 import { ILogger } from "@spt/models/spt/utils/ILogger";
 import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
 import { JsonUtil } from "@spt/utils/JsonUtil";
-import { VFS } from "@spt/utils/VFS";
-import { ImporterUtil } from "@spt/utils/ImporterUtil";
-import { IDatabaseTables } from "@spt/models/spt/server/IDatabaseTables";
-import path from "path";
-import config from "../config/config.json"
 import { ItemHelper } from "@spt/helpers/ItemHelper";
 import { BaseClasses } from "@spt/models/enums/BaseClasses";
 import { ITemplateItem } from "@spt/models/eft/common/tables/ITemplateItem";
+import { IDatabaseTables } from "@spt/models/spt/server/IDatabaseTables";
+import config from "../config/config.json";
+import path from "path";
+import fs from "fs";
 
+class Mod implements IPostDBLoadMod, IPreSptLoadMod {
+    private readonly MOD_NAME = "[ViniHNS] Lots of Ammo";
+    
+    // Ammo IDs by caliber
+    private readonly AMMO_IDS = {
+        NEW_9MM: [
+            "675f634ff132d4b47f2c1281",
+            "6760722b169af95328139b80", 
+            "6760a728fa36a05e723d69e7",
+            "67606fd205e98fee67b22293"
+        ],
+        NEW_12GAUGE: ["67688d2f4c7b7d3afcf1f36e"],
+        NEW_50AE: ["676a0831faeabbb1a7dc58f8"],
+        NEW_556: ["67689886d281a6080adbdb51"],
+        NEW_357: ["67670e9615726ef8b12a8388"],
+        NEW_300BLK: [
+            "6761690ac456a89d5bb0d14b",
+            "6761830c70f9c039ee0e73f2"
+        ],
+        NEW_338LAPUA: ["6767352b148c068905b8a911"],
+        NEW_762X51: [
+            "67683cf96dd721014a55c205",
+            "676ac1b09ccda4ddc5b1ab96"
+        ]
+    };
 
-class Mod implements IPostDBLoadMod, IPreSptLoadMod
-{
+    // Caliber constants
+    private readonly CALIBERS = {
+        "9MM": "Caliber9x19PARA",
+        "300BLK": "Caliber762x35",
+        "357": "Caliber9x33R",
+        "338LAPUA": "Caliber86x70",
+        "762X51": "Caliber762x51",
+        "12GAUGE": "Caliber12g",
+        "556": "Caliber556x45NATO",
+        "50AE": "Caliber127x33"
+    };
 
-    preSptLoad(container: DependencyContainer): void 
-    {
-        // get the logger from the server container
+    // Default ammo IDs for filtering
+    private readonly DEFAULT_AMMO_IDS = {
+        "9MM": "56d59d3ad2720bdb418b4577",
+        "300BLK": "619636be6db0f2477964e710",
+        "357": "62330b3ed4dc74626d570b95",
+        "338LAPUA": "5fc275cf85fd526b824a571a",
+        "762X51": "58dd3ad986f77403051cba8f",
+        "12GAUGE": "560d5e524bdc2d25448b4571",
+        "556": "54527a984bdc2d4e668b4567",
+        "50AE": "668fe62ac62660a5d8071446"
+    };
+
+    // Special items
+    private readonly SPECIAL_ITEMS = {
+        MAKAROV_THREADED_BARREL: "579204f224597773d619e051",
+        OIL_FILTER_SUPPRESSOR: "6766bdb3e654a22d0549ec85",
+        CHIAPPA_RHINO_CYLINDER: "619f54a1d25cbd424731fb99"
+    };
+
+    preSptLoad(container: DependencyContainer): void {
         const logger = container.resolve<ILogger>("WinstonLogger");
-        logger.logWithColor("[ViniHNS] Adding lots of Ammo!", LogTextColor.GREEN);
+        logger.logWithColor(`${this.MOD_NAME}: Loading...`, LogTextColor.GREEN);
     }
 
-    public postDBLoad(container: DependencyContainer): void
-    {
-
-        const logger2 = container.resolve<ILogger>("WinstonLogger");
-
-        // get database from server
-        const databaseServer = container.resolve<DatabaseServer>("DatabaseServer");
-
-        // Get ItemHelper ready to use
-        const itemHelper: ItemHelper = container.resolve<ItemHelper>("ItemHelper");
-
-        // Get all the in-memory json found in /assets/database
-        const tables: IDatabaseTables = databaseServer.getTables();
-
-        const new9mmAmmoId: string[] = [
-            "675f634ff132d4b47f2c1281", "6760722b169af95328139b80", "6760a728fa36a05e723d69e7", "67606fd205e98fee67b22293"
-        ];
-
-        const new12gaugeAmmoId: string[] = [
-            "67688d2f4c7b7d3afcf1f36e"
-        ];
-
-        const new50aeAmmoId: string[] = [
-            "676a0831faeabbb1a7dc58f8"
-        ];
-
-        const new556AmmoId: string[] = [
-            "67689886d281a6080adbdb51"
-        ];
-
-        const new357AmmoId: string[] = [
-            "67670e9615726ef8b12a8388"
-        ];
-
-        const new300BlkAmmoId: string[] = [
-            "6761690ac456a89d5bb0d14b", "6761830c70f9c039ee0e73f2"
-        ]
-
-        const new338LapuaAmmoId: string[] = [
-            "6767352b148c068905b8a911"
-        ];
-
-        const new762x51AmmoId: string[] = [
-            "67683cf96dd721014a55c205", "676ac1b09ccda4ddc5b1ab96"
-        ];
-
-        const caliber9mm: string = "Caliber9x19PARA";
-        const caliber300blk: string = "Caliber762x35";
-        const caliber357: string = "Caliber9x33R";
-        const caliber338lapua: string = "Caliber86x70";
-        const caliber762x51: string = "Caliber762x51";
-        const caliber12gauge: string = "Caliber12g";
-        const caliber556: string = "Caliber556x45NATO";
-        const caliber50ae: string = "Caliber127x33";
-
-        const default9mmId: string = "56d59d3ad2720bdb418b4577";
-        const default300BlkId: string = "619636be6db0f2477964e710";
-        const default357Id: string = "62330b3ed4dc74626d570b95";
-        const default338lapuaId: string = "5fc275cf85fd526b824a571a";
-        const default762x51Id: string = "58dd3ad986f77403051cba8f";
-        const default12gaugeId: string = "560d5e524bdc2d25448b4571";
-        const default556Id: string = "54527a984bdc2d4e668b4567";
-        const default50aeId: string = "668fe62ac62660a5d8071446";
-
-        // Object.values lets us grab the 'value' part as an array and ignore the 'key' part
-        const item: ITemplateItem[]  = Object.values(tables.templates.items);
-
-       
-        // Use the itemHelper class to assist us in getting only magazines
-        // We are filtering all items to only those with a base class of MAGAZINE (5448bc234bdc2d3c308b4569)
-        const allMagazines: ITemplateItem[] = item.filter(x => itemHelper.isOfBaseclass(x._id, BaseClasses.MAGAZINE));
+    public postDBLoad(container: DependencyContainer): void {
+        const logger = container.resolve<ILogger>("WinstonLogger");
         
-        const magazines9mm: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default9mmId));
-        const magazines300Blk: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default300BlkId));
-        const magazines357: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default357Id));
-        const magazines338lapua: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default338lapuaId));
-        const magazines762x51: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default762x51Id));
-        const magazines12gauge: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default12gaugeId));
-        const magazines556: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default556Id));
-        const magazines50ae: ITemplateItem[] = allMagazines.filter(x => x._props.Cartridges[0]._props.filters[0].Filter.includes(default50aeId));
+        try {
+            const databaseServer = container.resolve<DatabaseServer>("DatabaseServer");
+            const tables = databaseServer.getTables();
+            const itemHelper = container.resolve<ItemHelper>("ItemHelper");
 
-        const weapons9mm: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber9mm);
-        const weapons300Blk: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber300blk);
-        const weapons357: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber357);
-        const weapons338lapua: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber338lapua);
-        const weapons762x51: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber762x51);
-        const weapons12gauge: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber12gauge);
-        const weapons556: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber556);
-        const weapons50ae: ITemplateItem[] = item.filter(x => x._props?.ammoCaliber === caliber50ae);
+            // Apply ammo modifications
+            this.addAmmoToMagazines(tables, itemHelper, logger);
+            this.addAmmoToWeapons(tables, itemHelper, logger);
+            this.addSpecialModifications(tables);
+            this.loadCustomDatabase(container);
 
-        // Loop through all 9mm magazines
-        for (const magazines of magazines9mm) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new9mmAmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 9mm mag: ${magazines._name}`);
-            }
+            logger.logWithColor(`${this.MOD_NAME}: Loading complete.`, LogTextColor.GREEN);
+        } catch (error) {
+            logger.error(`${this.MOD_NAME}: Error during loading: ${error}`);
         }
+    }
 
-        // Loop through all 300Blk magazines
-        for (const magazines of magazines300Blk) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new300BlkAmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 300Blk mag: ${magazines._name}`);
-            }
-        }
+    private addAmmoToMagazines(tables: IDatabaseTables, itemHelper: ItemHelper, logger: ILogger): void {
+        const items = Object.values(tables.templates.items);
+        const allMagazines = items.filter(x => itemHelper.isOfBaseclass(x._id, BaseClasses.MAGAZINE));
 
-        // Loop through all 338Lapua magazines
-        for (const magazines of magazines338lapua) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new338LapuaAmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 338Lapua mag: ${magazines._name}`);
-            }
-        }
+        
 
-        // Loop through all 357 magazines
-        for (const magazines of magazines357) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new357AmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 357 mag: ${magazines._name}`);
-            }
-            if (magazines._id === "619f54a1d25cbd424731fb99") // Chiappa Rhino .357 6-round cylinder
-            {
-                magazines._props.Slots?.forEach(slot => 
-                {
-                    slot?._props?.filters?.[0]?.Filter?.push(...new357AmmoId);
-                });
-            }    
-        }
+        // Process each caliber
+        Object.keys(this.CALIBERS).forEach(caliberKey => {
+            const defaultAmmoId = this.DEFAULT_AMMO_IDS[caliberKey];
+            const newAmmoIds = this.AMMO_IDS[`NEW_${caliberKey}`];
+            
+            if (!defaultAmmoId || !newAmmoIds) return;
 
-        // Loop through all 762x51 magazines
-        for (const magazines of magazines762x51) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new762x51AmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 762x51 mag: ${magazines._name}`);
-            }
-        }
+            const magazines = allMagazines.filter(magazine => 
+                magazine._props.Cartridges?.[0]?._props?.filters?.[0]?.Filter?.includes(defaultAmmoId)
+            );
 
-        // Loop through all 12gauge magazines
-        for (const magazines of magazines12gauge) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new12gaugeAmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 12gauge mag: ${magazines._name}`);
-            }
-        }
+            magazines.forEach(magazine => {
+                magazine._props.Cartridges[0]._props.filters[0].Filter.push(...newAmmoIds);
+                
+                if (config.enableLogs) {
+                    logger.debug(`${this.MOD_NAME}: Added new ${caliberKey} ammo to magazine: ${magazine._name}`);
+                }
 
-        // Loop through all 556 magazines
-        for (const magazines of magazines556) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new556AmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 556 mag: ${magazines._name}`);
-            }
-        }
+                // Special case for Chiappa Rhino cylinder
+                if (magazine._id === this.SPECIAL_ITEMS.CHIAPPA_RHINO_CYLINDER && caliberKey === "357") {
+                    magazine._props.Slots?.forEach(slot => {
+                        slot?._props?.filters?.[0]?.Filter?.push(...newAmmoIds);
+                    });
+                }  
+            });
+        });
 
-        // Loop through all 50ae magazines
-        for (const magazines of magazines50ae) 
-        {
-            magazines._props.Cartridges[0]._props.filters[0].Filter.push(...new50aeAmmoId);
-            if (config.enableLogs)
-            {
-                logger2.debug(`[Lots of Ammo] Added new ammo to the 50ae mag: ${magazines._name}`);
-            }
-        }
-
-        // Loop through all weapons and add the new ammo to the chamber
-        for (const weapons of weapons9mm) 
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new9mmAmmoId);
-                if (config.enableLogs) 
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+        // Special case for MTS-255 cylinder (12 gauge)
+        const mts255Cylinder = tables.templates.items["60dc519adf4c47305f6d410d"]; // MTS-255 cylinder ID
+        if (mts255Cylinder && this.AMMO_IDS.NEW_12GAUGE) {
+            for (let i = 0; i < 5; i++) {
+                if (mts255Cylinder._props.Slots?.[i]?._props?.filters?.[0]?.Filter) {
+                    mts255Cylinder._props.Slots[i]._props.filters[0].Filter.push(...this.AMMO_IDS.NEW_12GAUGE);
                 }
             }
         }
+    }
 
-        for (const weapons of weapons556)
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new556AmmoId);
-                if (config.enableLogs)
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
+    private addAmmoToWeapons(tables: IDatabaseTables, itemHelper: ItemHelper, logger: ILogger): void {
+        const items = Object.values(tables.templates.items);
+
+        // Process each caliber for weapons
+        Object.keys(this.CALIBERS).forEach(caliberKey => {
+            const caliberName = this.CALIBERS[caliberKey];
+            const newAmmoIds = this.AMMO_IDS[`NEW_${caliberKey}`];
+            
+            if (!caliberName || !newAmmoIds) return;
+
+            const weapons = items.filter(item => item._props?.ammoCaliber === caliberName);
+
+            weapons.forEach(weapon => {
+                if (weapon?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter) {
+                    weapon._props.Chambers[0]._props.filters[0].Filter.push(...newAmmoIds);
+                    
+                    if (config.enableLogs) {
+                        logger.debug(`${this.MOD_NAME}: Added new ${caliberKey} ammo to weapon: ${weapon._name}`);
+                    }
+
+                    // Special case for double-barrel shotguns (second chamber)
+                    if (caliberKey === "12GAUGE" && weapon._props.Chambers[1]) {
+                        weapon._props.Chambers[1]._props.filters[0].Filter.push(...newAmmoIds);
+                    }
                 }
-            }
+            });
+        });
+    }
+
+    private addSpecialModifications(tables: IDatabaseTables): void {
+        // Add oil filter suppressor to Makarov threaded barrel
+        const makarovBarrel = tables.templates.items[this.SPECIAL_ITEMS.MAKAROV_THREADED_BARREL];
+        if (makarovBarrel?._props?.Slots?.[1]?._props?.filters?.[0]?.Filter) {
+            makarovBarrel._props.Slots[1]._props.filters[0].Filter.push(this.SPECIAL_ITEMS.OIL_FILTER_SUPPRESSOR);
         }
+    }
 
-        for (const weapons of weapons12gauge)
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new12gaugeAmmoId);
-                if (config.enableLogs)
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
-                }
-                if (weapons?._props?.Chambers?.[1])
-                {
-                    weapons._props.Chambers[1]._props.filters[0].Filter.push(...new12gaugeAmmoId);
-                }
-            }
-        }
-
-        for (const weapons of weapons50ae)
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new50aeAmmoId);
-                if (config.enableLogs)
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
-                }
-            }
-        }
-
-        for (const weapons of weapons300Blk) 
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new300BlkAmmoId);
-                if (config.enableLogs)
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
-                }
-            }
-        }
-
-        for (const weapons of weapons338lapua) 
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new338LapuaAmmoId);
-                if (config.enableLogs)
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
-                }
-            }
-        }
-
-        for (const weapons of weapons357) 
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new357AmmoId);
-                if (config.enableLogs) 
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
-                }
-            }
-        }
-
-        for (const weapons of weapons762x51) 
-        {
-            if (weapons?._props?.Chambers?.[0]?._props?.filters?.[0]?.Filter)
-            {
-                weapons._props.Chambers[0]._props.filters[0].Filter.push(...new762x51AmmoId);
-                if (config.enableLogs) 
-                {
-                    logger2.debug(`[Lots of Ammo] Added new ammo to the weapon: ${weapons._name}`);
-                }
-            }
-        }
-
-        //add oil filter supressor to the makarov threaded barrel
-        tables.templates.items["579204f224597773d619e051"]._props.Slots[1]._props.filters[0].Filter.push("6766bdb3e654a22d0549ec85")
-
-        // -----------------------------------------------------------------------------------------------------------------------------------
-
-        // Thanks TRON <3
+    private loadCustomDatabase(container: DependencyContainer): void {
         const logger = container.resolve<ILogger>("WinstonLogger");
         const db = container.resolve<DatabaseServer>("DatabaseServer").getTables();
-        const ImporterUtil = container.resolve<ImporterUtil>("ImporterUtil");
-        const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
-        const VFS = container.resolve<VFS>("VFS");
+        const jsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        
+        const modPath = path.resolve(__dirname, "../");
+        const dbPath = path.join(modPath, "db");
+        
+        if (!fs.existsSync(dbPath)) {
+            logger.warning(`${this.MOD_NAME}: Database folder not found at ${dbPath}`);
+            return;
+        }
+
+        try {
+            const customDb = this.loadRecursive(dbPath, jsonUtil, logger);
+            this.processCustomItems(customDb, db, jsonUtil);
+            this.processTraderAssorts(customDb, db);
+            this.processLocalizations(customDb, db);
+        } catch (error) {
+            logger.error(`${this.MOD_NAME}: Error loading custom database: ${error}`);
+        }
+    }
+
+    private loadRecursive(dirPath: string, jsonUtil: JsonUtil, logger: ILogger): any {
+        const result: any = {};
+        
+        const loadDirectory = (currentPath: string, obj: any): void => {
+            if (!fs.existsSync(currentPath)) return;
+            
+            fs.readdirSync(currentPath).forEach(file => {
+                const fullPath = path.join(currentPath, file);
+                const stat = fs.statSync(fullPath);
+                
+                if (stat.isDirectory()) {
+                    obj[file] = {};
+                    loadDirectory(fullPath, obj[file]);
+                } else if (file.endsWith('.json')) {
+                    const fileName = file.replace('.json', '');
+                    try {
+                        obj[fileName] = jsonUtil.deserialize(fs.readFileSync(fullPath, 'utf8'));
+                    } catch (error) {
+                        logger.error(`${this.MOD_NAME}: Error loading ${fullPath}: ${error}`);
+                    }
+                }
+            });
+        };
+        
+        loadDirectory(dirPath, result);
+        return result;
+    }
+
+    private processCustomItems(customDb: any, db: any, jsonUtil: JsonUtil): void {
+        if (!customDb.templates?.items) return;
+
+        Object.keys(customDb.templates.items).forEach(itemFile => {
+            const item = customDb.templates.items[itemFile];
+            const handbook = customDb.templates.handbook?.[itemFile];
+            
+            if (item && handbook) {
+                db.templates.items[item._id] = item;
+                db.templates.handbook.Items.push({
+                    Id: item._id,
+                    ParentId: handbook.ParentId,
+                    Price: handbook.Price
+                });
+            }
+        });
+    }
+
+    private processTraderAssorts(customDb: any, db: any): void {
+        if (!customDb.traders?.assort) return;
+
+        Object.keys(customDb.traders.assort).forEach(traderId => {
+            const traderAssort = db.traders[traderId]?.assort;
+            const customAssort = customDb.traders.assort[traderId];
+            
+            if (traderAssort && customAssort) {
+                if (customAssort.items) traderAssort.items.push(...customAssort.items);
+                if (customAssort.barter_scheme) Object.assign(traderAssort.barter_scheme, customAssort.barter_scheme);
+                if (customAssort.loyal_level_items) Object.assign(traderAssort.loyal_level_items, customAssort.loyal_level_items);
+            }
+        });
+    }
+
+    private processLocalizations(customDb: any, db: any): void {
+        if (!customDb.locales) return;
+
         const locales = db.locales.global;
-        const items = db.templates.items;
-        const handbook = db.templates.handbook.Items;
-        const modPath = path.resolve(__dirname.toString()).split(path.sep).join("/")+"/";
-
-        const mydb = ImporterUtil.loadRecursive(`${modPath}../db/`);
-
-        const itemPath = `${modPath}../db/templates/items/`;
-        const handbookPath = `${modPath}../db/templates/handbook/`;
-
-        const buffs = db.globals.config.Health.Effects.Stimulator.Buffs
-
-
-        for(const itemFile in mydb.templates.items) {
-            const item = JsonUtil.deserialize(VFS.readFile(`${itemPath}${itemFile}.json`));
-            const hb = JsonUtil.deserialize(VFS.readFile(`${handbookPath}${itemFile}.json`));
-
-            const itemId = item._id;
-            //logger.info(itemId);
-
-            items[itemId] = item;
-            //logger.info(hb.ParentId);
-            //logger.info(hb.Price);
-            handbook.push({
-                "Id": itemId,
-                "ParentId": hb.ParentId,
-                "Price": hb.Price
+        
+        // Process default English localization
+        if (customDb.locales.en) {
+            Object.keys(locales).forEach(localeId => {
+                this.processLocaleData(customDb.locales.en, locales[localeId]);
             });
         }
-        for (const trader in mydb.traders.assort) {
-            const traderAssort = db.traders[trader].assort
-            
-            for (const item of mydb.traders.assort[trader].items) {
-                traderAssort.items.push(item);
-            }
-    
-            for (const bc in mydb.traders.assort[trader].barter_scheme) {
-                traderAssort.barter_scheme[bc] = mydb.traders.assort[trader].barter_scheme[bc];
-            }
-    
-            for (const level in mydb.traders.assort[trader].loyal_level_items) {
-                traderAssort.loyal_level_items[level] = mydb.traders.assort[trader].loyal_level_items[level];
-            }
-        }
-        //logger.info("Test");
-        // default localization
-        for (const localeID in locales)
-        {
-            for (const id in mydb.locales.en.templates) {
-                const item = mydb.locales.en.templates[id];
-                //logger.info(item);
-                for(const locale in item) {
-                    //logger.info(locale);
-                    //logger.info(item[locale]);
-                    //logger.info(`${id} ${locale}`);
-                    locales[localeID][`${id} ${locale}`] = item[locale];
-                }
-            }
 
-            for (const id in mydb.locales.en.preset) {
-                const item = mydb.locales.en.preset[id];
-                for(const locale in item) {
-                    //logger.info(`${id} ${locale}`);
-                    locales[localeID][`${id}`] = item[locale];
-                }
+        // Process specific localizations
+        Object.keys(customDb.locales).forEach(localeKey => {
+            if (localeKey !== 'en' && locales[localeKey]) {
+                this.processLocaleData(customDb.locales[localeKey], locales[localeKey]);
             }
+        });
+    }
+
+    private processLocaleData(sourceLocale: any, targetLocale: any): void {
+        if (sourceLocale.templates) {
+            Object.keys(sourceLocale.templates).forEach(id => {
+                const item = sourceLocale.templates[id];
+                Object.keys(item).forEach(key => {
+                    targetLocale[`${id} ${key}`] = item[key];
+                });
+            });
         }
 
-        for (const localeID in mydb.locales)
-        {
-            for (const id in mydb.locales[localeID].templates) {
-                const item = mydb.locales[localeID].templates[id];
-                //logger.info(item);
-                for(const locale in item) {
-                    locales[localeID][`${id}`] = item[locale];
-                }
-            }
-
-            for (const id in mydb.locales[localeID].preset) {
-                const item = mydb.locales[localeID].preset[id];
-                for(const locale in item) {
-                    //logger.info(`${id} ${locale}`);
-                    locales[localeID][`${id} ${locale}`] = item[locale];
-                }
-                
-            }
-
+        if (sourceLocale.preset) {
+            Object.keys(sourceLocale.preset).forEach(id => {
+                const item = sourceLocale.preset[id];
+                Object.keys(item).forEach(key => {
+                    targetLocale[id] = item[key];
+                });
+            });
         }
     }
 }
 
-export const mod = new Mod();
+module.exports = { mod: new Mod() };

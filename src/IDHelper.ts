@@ -429,6 +429,7 @@ export class IDHelper
     private MTS_255: string = "60db29ce99594040e04c4a27";
     private REMINGTON_M870: string = "5a7828548dc32e5a9c28b516";
     private SAIGA_12K: string = "576165642459773c7a400233";
+    private SAIGA_12K_FULL_AUTO: string = "674fe9a75e51f1c47c04ec23";
     private KS_23M: string = "5e848cc2988a8701445df1e8";
     private TOZ_106: string = "5a38e6bac4a2826c6e06d79b";
 
@@ -582,6 +583,7 @@ export class IDHelper
             this.MTS_255,
             this.REMINGTON_M870,
             this.SAIGA_12K,
+            this.SAIGA_12K_FULL_AUTO,
             this.KS_23M,
             this.TOZ_106
         ],
