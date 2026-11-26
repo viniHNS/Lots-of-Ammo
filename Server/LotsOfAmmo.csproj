@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>LotsOfAmmo</AssemblyName>
+    <RootNamespace>LotsOfAmmo</RootNamespace>
+    <Version>2.0.0</Version>
+    <Authors>viniHNS</Authors>
+    <Company>viniHNS</Company>
+    <Product>Lots-of-Ammo</Product>
+    <Description>Adds a large set of new ammunition to SPT: 9x19, .300 Blackout, .357 Magnum, .338 Lapua, 7.62x51 and 5.56x45 loads, .50 AE, .50 Beowulf, 10mm Auto, .458 SOCOM and .45-70 Government rounds, plus two 5.56x45 M855 ammo boxes. Meant as the ammo base for other mods.</Description>
+    <Copyright>Copyright © viniHNS</Copyright>
+    <RepositoryUrl>https://github.com/viniHNS/Lots-of-Ammo</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SPTushonka.Common" Version="4.1.6" />
+    <PackageReference Include="SPTushonka.DI" Version="4.1.6" />
+    <PackageReference Include="SPTushonka.Server.Core" Version="4.1.6" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="3.0.6" />
+  </ItemGroup>
+
+  <!--
+    Mod data files. WTT-CommonLib reads db/... relative to the mod folder and the SPT server reads
+    bundles.json + bundles/; They are copied to the output, deployed and zipped keeping the folder layout.
+    The Web SDK already treats *.json as Content, so those use Update; *.bundle files are None.
+  -->
+  <ItemGroup>
+    <Content Update="db\**\*.json;bundles.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="bundles\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ModDataFiles Include="bundles.json;db\**\*;bundles\**\*" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <SptModsDir>D:\Jogos\SPT4.1\SPT_Runtime\user\mods</SptModsDir>
+  </PropertyGroup>
+
+  <!-- Deploy to the local SPT install for testing. -->
+  <Target Name="DeployToSpt" AfterTargets="Build" Condition="Exists('$(SptModsDir)')">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SptModsDir)\$(AssemblyName)" />
+    <Copy SourceFiles="@(ModDataFiles)" DestinationFiles="@(ModDataFiles->'$(SptModsDir)\$(AssemblyName)\%(RelativeDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    <Message Text="--- Deployed server mod to $(SptModsDir)\$(AssemblyName) ---" Importance="high" />
+  </Target>
+
+  <!-- Release only: builds LotsOfAmmo.zip in the solution folder. -->
+  <Target Name="PackageModForDistribution" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <ModName>$(AssemblyName)</ModName>
+      <ZipFileName>$(ModName).zip</ZipFileName>
+      <TempPackageDir>$(ProjectDir)obj\Package</TempPackageDir>
+      <ModPackageDir>$(TempPackageDir)\SPT_Runtime\user\mods\$(ModName)</ModPackageDir>
+    </PropertyGroup>
+    <Message Text="--- Starting Mod packaging for distribution ---" Importance="high" />
+    <RemoveDir Directories="$(TempPackageDir)" />
+    <MakeDir Directories="$(ModPackageDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModPackageDir)" />
+    <Copy SourceFiles="@(ModDataFiles)" DestinationFiles="@(ModDataFiles->'$(ModPackageDir)\%(RelativeDir)%(Filename)%(Extension)')" />
+    <ZipDirectory SourceDirectory="$(TempPackageDir)" DestinationFile="$(ProjectDir)..\$(ZipFileName)" Overwrite="true" />
+    <RemoveDir Directories="$(TempPackageDir)" />
+    <Message Text="--- Mod successfully packaged at: $(ProjectDir)..\$(ZipFileName) ---" Importance="high" />
+  </Target>
+
+</Project>

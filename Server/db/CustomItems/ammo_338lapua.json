@@ -1,0 +1,39 @@
+{
+  "6767352b148c068905b8a911": {
+    "itemTplToClone": "5fc382c1016cce60e8341b20",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 760,
+    "fleaPriceRoubles": 900,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_86x70_loa_sp.bundle",
+        "rcid": ""
+      },
+      "ArmorDamage": 62,
+      "Damage": 168,
+      "HeavyBleedingDelta": 0.5,
+      "LightBleedingDelta": 0.65,
+      "PenetrationPower": 25,
+      "RicochetChance": 0.45
+    },
+    "locales": {
+      "en": {
+        "name": ".338 Lapua Magnum SP",
+        "shortName": ".338 SP",
+        "description": "A .338 Lapua Magnum (8.6x70mm) cartridge with a 16.2-gram lead core bullet featuring a soft point and a brass jacket, housed in a brass case. Designed primarily for hunting and long-range precision shooting, this cartridge offers exceptional stopping power and devastating terminal performance upon impact. The soft point design ensures controlled expansion, maximizing tissue damage while maintaining deep penetration. Although highly effective against unarmored and lightly armored targets, the bullet's design also increases the likelihood of ricochets when striking hard surfaces."
+      },
+      "po": {
+        "name": ".338 Lapua Magnum SP",
+        "shortName": ".338 SP",
+        "description": "Um cartucho .338 Lapua Magnum (8,6x70mm) com projétil de núcleo de chumbo de 16,2 gramas, ponta macia e jaqueta de latão, num estojo de latão. Feito principalmente para caça e tiro de precisão de longa distância, oferece poder de parada excepcional e desempenho terminal devastador no impacto. A ponta macia garante expansão controlada, maximizando o dano ao tecido e mantendo penetração profunda. Embora muito eficaz contra alvos sem proteção ou com proteção leve, o formato do projétil também aumenta a chance de ricochete em superfícies duras."
+      },
+      "ru": {
+        "name": ".338 Lapua Magnum SP",
+        "shortName": ".338 SP",
+        "description": "Патрон .338 Lapua Magnum (8.6x70мм) с пулей массой 16,2 грамма со свинцовым сердечником и мягким наконечником (Soft-Point), в латунной оболочке, в латунной гильзе. Предназначен в первую очередь для охоты и точной стрельбы на большие дистанции: исключительное останавливающее действие и разрушительный терминальный эффект при попадании. Мягкий наконечник обеспечивает контролируемое раскрытие, максимально повреждая ткани и сохраняя глубокое проникновение. Патрон очень эффективен против целей без брони и с легкой броней, однако конструкция пули также повышает вероятность рикошета от твердых поверхностей."
+      }
+    },
+    "addCaliberToAllCloneLocations": true
+  }
+}

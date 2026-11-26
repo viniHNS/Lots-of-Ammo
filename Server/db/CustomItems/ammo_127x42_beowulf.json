@@ -1,0 +1,436 @@
+{
+  "6643eb33e6a42c5684471906": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 520,
+    "fleaPriceRoubles": 900,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x42_la_fmj.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber127x42",
+      "ExaminedByDefault": true,
+      "Weight": 0.031,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".50 Beowulf",
+      "BulletDiameterMilimeters": 12.7,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 114,
+      "PenetrationPower": 27,
+      "ArmorDamage": 52,
+      "InitialSpeed": 560,
+      "BulletMassGram": 22.7,
+      "BallisticCoeficient": 0.145,
+      "FragmentationChance": 0.3,
+      "PenetrationChanceObstacle": 0.55,
+      "RicochetChance": 0.2,
+      "HeavyBleedingDelta": 0.21,
+      "LightBleedingDelta": 0.3,
+      "ammoAccr": 0,
+      "ammoRec": 0,
+      "DurabilityBurnModificator": 1.5,
+      "HeatFactor": 2.3,
+      "MalfFeedChance": 0.06,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".50 Beowulf FMJ",
+        "shortName": "FMJ",
+        "description": "The .50 Beowulf (12.7x42mm RB) is a big-bore cartridge developed by Alexander Arms for the AR-15: a straight case with a rebated rim the size of the 7.62x39, feeding single-stack from standard magazines. This Alexander Arms load carries a 350-grain full metal jacket flat-point bullet: the all-round option, with a heavy hit and modest penetration."
+      },
+      "po": {
+        "name": ".50 Beowulf FMJ",
+        "shortName": "FMJ",
+        "description": "O .50 Beowulf (12,7x42mm RB) é um cartucho de grosso calibre criado pela Alexander Arms para o AR-15: estojo reto com aro rebatido do tamanho do 7,62x39, alimentado em fila única por carregadores comuns. Esta carga da Alexander Arms leva um projétil encamisado de ponta chata de 350 grãos: a opção para tudo, com impacto pesado e penetração modesta."
+      },
+      "ru": {
+        "name": ".50 Beowulf FMJ",
+        "shortName": "FMJ",
+        "description": "Патрон .50 Beowulf (12.7x42мм RB) — крупнокалиберный патрон, разработанный компанией Alexander Arms для AR-15: прямая гильза с выступающим фланцем размером с 7.62x39, подача в один ряд из обычных магазинов. Этот заряд Alexander Arms несет цельнооболочечную пулю с плоским наконечником массой 350 гран: универсальный вариант с тяжелым ударом и умеренной пробиваемостью."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "6642b6b15d80dec030dafa7a": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 480,
+    "fleaPriceRoubles": 840,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x42_la_hp.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber127x42",
+      "ExaminedByDefault": true,
+      "Weight": 0.031,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".50 Beowulf",
+      "BulletDiameterMilimeters": 12.7,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 140,
+      "PenetrationPower": 9,
+      "ArmorDamage": 30,
+      "InitialSpeed": 541,
+      "BulletMassGram": 22.7,
+      "BallisticCoeficient": 0.145,
+      "FragmentationChance": 0.4,
+      "PenetrationChanceObstacle": 0.15,
+      "RicochetChance": 0.05,
+      "HeavyBleedingDelta": 0.21,
+      "LightBleedingDelta": 0.3,
+      "ammoAccr": 5,
+      "ammoRec": -3,
+      "DurabilityBurnModificator": 1.3,
+      "HeatFactor": 2.2,
+      "MalfFeedChance": 0.07,
+      "AmmoTooltipClass": "SoftTargets",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".50 Beowulf HP",
+        "shortName": "HP",
+        "description": "The .50 Beowulf (12.7x42mm RB) is a big-bore cartridge developed by Alexander Arms for the AR-15: a straight case with a rebated rim the size of the 7.62x39, feeding single-stack from standard magazines. A 350-grain jacketed hollow point loaded on Starline brass: it opens up violently in unprotected targets and is stopped by almost any armor."
+      },
+      "po": {
+        "name": ".50 Beowulf HP",
+        "shortName": "HP",
+        "description": "O .50 Beowulf (12,7x42mm RB) é um cartucho de grosso calibre criado pela Alexander Arms para o AR-15: estojo reto com aro rebatido do tamanho do 7,62x39, alimentado em fila única por carregadores comuns. Ponta oca encamisada de 350 grãos em estojo Starline: abre com violência em alvos sem proteção e é parada por quase qualquer colete."
+      },
+      "ru": {
+        "name": ".50 Beowulf HP",
+        "shortName": "HP",
+        "description": "Патрон .50 Beowulf (12.7x42мм RB) — крупнокалиберный патрон, разработанный компанией Alexander Arms для AR-15: прямая гильза с выступающим фланцем размером с 7.62x39, подача в один ряд из обычных магазинов. Экспансивная оболочечная пуля массой 350 гран в гильзе Starline: яростно раскрывается в незащищенных целях и останавливается почти любой броней."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "6643ea180814e77a3a18db58": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 500,
+    "fleaPriceRoubles": 880,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x42_la_hydra.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber127x42",
+      "ExaminedByDefault": true,
+      "Weight": 0.031,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".50 Beowulf",
+      "BulletDiameterMilimeters": 12.7,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 128,
+      "PenetrationPower": 15,
+      "ArmorDamage": 36,
+      "InitialSpeed": 550,
+      "BulletMassGram": 22.0,
+      "BallisticCoeficient": 0.14,
+      "FragmentationChance": 0.4,
+      "PenetrationChanceObstacle": 0.25,
+      "RicochetChance": 0.08,
+      "HeavyBleedingDelta": 0.2,
+      "LightBleedingDelta": 0.28,
+      "ammoAccr": 3,
+      "ammoRec": -2,
+      "DurabilityBurnModificator": 1.35,
+      "HeatFactor": 2.2,
+      "MalfFeedChance": 0.06,
+      "AmmoTooltipClass": "SoftTargets",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".50 Beowulf Hydra-Shok JHP",
+        "shortName": "Hydra-Shok",
+        "description": "The .50 Beowulf (12.7x42mm RB) is a big-bore cartridge developed by Alexander Arms for the AR-15: a straight case with a rebated rim the size of the 7.62x39, feeding single-stack from standard magazines. A Federal-style Hydra-Shok jacketed hollow point in a nickel-plated case: the centre post in the cavity gives controlled expansion, with a little more penetration than the plain HP."
+      },
+      "po": {
+        "name": ".50 Beowulf Hydra-Shok JHP",
+        "shortName": "Hydra-Shok",
+        "description": "O .50 Beowulf (12,7x42mm RB) é um cartucho de grosso calibre criado pela Alexander Arms para o AR-15: estojo reto com aro rebatido do tamanho do 7,62x39, alimentado em fila única por carregadores comuns. Ponta oca encamisada Hydra-Shok no estilo da Federal, em estojo niquelado: o poste central da cavidade dá expansão controlada, com um pouco mais de penetração que a HP comum."
+      },
+      "ru": {
+        "name": ".50 Beowulf Hydra-Shok JHP",
+        "shortName": "Hydra-Shok",
+        "description": "Патрон .50 Beowulf (12.7x42мм RB) — крупнокалиберный патрон, разработанный компанией Alexander Arms для AR-15: прямая гильза с выступающим фланцем размером с 7.62x39, подача в один ряд из обычных магазинов. Экспансивная оболочечная пуля Hydra-Shok в стиле Federal в никелированной гильзе: центральный стержень в полости дает контролируемое раскрытие, а пробиваемость чуть выше, чем у обычной HP."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "fc7c51363636fe14217914ed": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 1050,
+    "fleaPriceRoubles": 1700,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x42_la_ap.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber127x42",
+      "ExaminedByDefault": true,
+      "Weight": 0.031,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".50 Beowulf",
+      "BulletDiameterMilimeters": 12.7,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 96,
+      "PenetrationPower": 46,
+      "ArmorDamage": 66,
+      "InitialSpeed": 540,
+      "BulletMassGram": 21.4,
+      "BallisticCoeficient": 0.17,
+      "FragmentationChance": 0.05,
+      "PenetrationChanceObstacle": 0.75,
+      "RicochetChance": 0.3,
+      "HeavyBleedingDelta": 0.05,
+      "LightBleedingDelta": 0.1,
+      "ammoAccr": -4,
+      "ammoRec": 10,
+      "DurabilityBurnModificator": 1.9,
+      "HeatFactor": 2.6,
+      "MalfFeedChance": 0.07,
+      "AmmoTooltipClass": "ArmorPiercing",
+      "RarityPvE": "Superrare"
+    },
+    "locales": {
+      "en": {
+        "name": ".50 Beowulf AP",
+        "shortName": "AP",
+        "description": "The .50 Beowulf (12.7x42mm RB) is a big-bore cartridge developed by Alexander Arms for the AR-15: a straight case with a rebated rim the size of the 7.62x39, feeding single-stack from standard magazines. An armor-piercing load built: an exposed hardened steel arrowhead ahead of a copper slug in a short jacket. It trades stopping power for penetration and is hard on the barrel."
+      },
+      "po": {
+        "name": ".50 Beowulf AP",
+        "shortName": "AP",
+        "description": "O .50 Beowulf (12,7x42mm RB) é um cartucho de grosso calibre criado pela Alexander Arms para o AR-15: estojo reto com aro rebatido do tamanho do 7,62x39, alimentado em fila única por carregadores comuns. Carga perfurante construída: ponta de aço temperado exposta à frente de um núcleo de cobre em jaqueta curta. Troca poder de parada por penetração e castiga o cano."
+      },
+      "ru": {
+        "name": ".50 Beowulf AP",
+        "shortName": "AP",
+        "description": "Патрон .50 Beowulf (12.7x42мм RB) — крупнокалиберный патрон, разработанный компанией Alexander Arms для AR-15: прямая гильза с выступающим фланцем размером с 7.62x39, подача в один ряд из обычных магазинов. Бронебойный заряд: открытый наконечник-«стрела» из закаленной стали перед медным сердечником в короткой оболочке. Меняет останавливающее действие на пробиваемость и сильно изнашивает ствол."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "c12322bf716a13dac69a45d7": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 420,
+    "fleaPriceRoubles": 760,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x42_la_canister.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber127x42",
+      "ExaminedByDefault": true,
+      "Weight": 0.031,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".50 Beowulf",
+      "BulletDiameterMilimeters": 12.7,
+      "ProjectileCount": 8,
+      "buckshotBullets": 8,
+      "ammoType": "buckshot",
+      "Tracer": false,
+      "Damage": 30,
+      "PenetrationPower": 3,
+      "ArmorDamage": 24,
+      "InitialSpeed": 420,
+      "BulletMassGram": 2.6,
+      "BallisticCoeficient": 0.02,
+      "FragmentationChance": 0,
+      "PenetrationChanceObstacle": 0.03,
+      "RicochetChance": 0,
+      "HeavyBleedingDelta": 0.1,
+      "LightBleedingDelta": 0.15,
+      "ammoAccr": -10,
+      "ammoRec": 5,
+      "DurabilityBurnModificator": 1.2,
+      "HeatFactor": 2.2,
+      "MalfFeedChance": 0.09,
+      "AmmoTooltipClass": "SoftTargets",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".50 Beowulf Canister",
+        "shortName": "Canister",
+        "description": "The .50 Beowulf (12.7x42mm RB) is a big-bore cartridge developed by Alexander Arms for the AR-15: a straight case with a rebated rim the size of the 7.62x39, feeding single-stack from standard magazines. A canister load: a polymer cage holding eight lead balls in two layers, released at the muzzle. It turns the rifle into a short-range shotgun."
+      },
+      "po": {
+        "name": ".50 Beowulf Canister",
+        "shortName": "Canister",
+        "description": "O .50 Beowulf (12,7x42mm RB) é um cartucho de grosso calibre criado pela Alexander Arms para o AR-15: estojo reto com aro rebatido do tamanho do 7,62x39, alimentado em fila única por carregadores comuns. Carga canister: uma cesta de polímero com oito esferas de chumbo em duas camadas, liberadas na boca do cano. Transforma o fuzil numa escopeta de curta distância."
+      },
+      "ru": {
+        "name": ".50 Beowulf Canister",
+        "shortName": "Картечь",
+        "description": "Патрон .50 Beowulf (12.7x42мм RB) — крупнокалиберный патрон, разработанный компанией Alexander Arms для AR-15: прямая гильза с выступающим фланцем размером с 7.62x39, подача в один ряд из обычных магазинов. Картечный заряд (canister): полимерная корзина с восемью свинцовыми шариками в два слоя, которые высвобождаются у дульного среза. Превращает винтовку в дробовик ближнего боя."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "0cd973a3253f183b1c0b42bf": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 640,
+    "fleaPriceRoubles": 1050,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x42_la_ftx.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber127x42",
+      "ExaminedByDefault": true,
+      "Weight": 0.031,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".50 Beowulf",
+      "BulletDiameterMilimeters": 12.7,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 122,
+      "PenetrationPower": 20,
+      "ArmorDamage": 42,
+      "InitialSpeed": 546,
+      "BulletMassGram": 19.4,
+      "BallisticCoeficient": 0.2,
+      "FragmentationChance": 0.35,
+      "PenetrationChanceObstacle": 0.3,
+      "RicochetChance": 0.1,
+      "HeavyBleedingDelta": 0.22,
+      "LightBleedingDelta": 0.32,
+      "ammoAccr": 8,
+      "ammoRec": -4,
+      "DurabilityBurnModificator": 1.3,
+      "HeatFactor": 2.1,
+      "MalfFeedChance": 0.05,
+      "AmmoTooltipClass": "SoftTargets",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".50 Beowulf FTX",
+        "shortName": "FTX",
+        "description": "The .50 Beowulf (12.7x42mm RB) is a big-bore cartridge developed by Alexander Arms for the AR-15: a straight case with a rebated rim the size of the 7.62x39, feeding single-stack from standard magazines. The Alexander Arms factory load with the 300-grain Hornady FTX (Flex Tip eXpanding) bullet on Alexander Arms brass: a red polymer tip ahead of a jacketed lead core gives a spitzer nose for a flatter trajectory and drives the expansion even at the modest Beowulf velocities. The lightest of the single-projectile Beowulf loads."
+      },
+      "po": {
+        "name": ".50 Beowulf FTX",
+        "shortName": "FTX",
+        "description": "O .50 Beowulf (12,7x42mm RB) é um cartucho de grosso calibre criado pela Alexander Arms para o AR-15: estojo reto com aro rebatido do tamanho do 7,62x39, alimentado em fila única por carregadores comuns. A carga de fábrica da Alexander Arms com o projétil Hornady FTX (Flex Tip eXpanding) de 300 grãos, em estojo Alexander Arms: a ponta de polímero vermelha à frente do núcleo de chumbo encamisado dá um nariz spitzer, de trajetória mais tensa, e garante a expansão mesmo nas velocidades modestas do Beowulf. A mais leve das cargas de projétil único do Beowulf."
+      },
+      "ru": {
+        "name": ".50 Beowulf FTX",
+        "shortName": "FTX",
+        "description": "Патрон .50 Beowulf (12.7x42мм RB) — крупнокалиберный патрон, разработанный компанией Alexander Arms для AR-15: прямая гильза с выступающим фланцем размером с 7.62x39, подача в один ряд из обычных магазинов. Заводской заряд Alexander Arms с пулей Hornady FTX (Flex Tip eXpanding) массой 300 гран в гильзе Alexander Arms: красный полимерный наконечник перед свинцовым сердечником в оболочке дает заостренную форму для более настильной траектории и обеспечивает раскрытие даже на скромных скоростях Beowulf. Самый легкий из зарядов Beowulf с одной пулей."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "5472cda055fbde487e98e491": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 1150,
+    "fleaPriceRoubles": 2000,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x42_la_lehigh.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber127x42",
+      "ExaminedByDefault": true,
+      "Weight": 0.031,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".50 Beowulf",
+      "BulletDiameterMilimeters": 12.7,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 112,
+      "PenetrationPower": 35,
+      "ArmorDamage": 58,
+      "InitialSpeed": 541,
+      "BulletMassGram": 22.7,
+      "BallisticCoeficient": 0.16,
+      "FragmentationChance": 0.0,
+      "PenetrationChanceObstacle": 0.7,
+      "RicochetChance": 0.25,
+      "HeavyBleedingDelta": 0.3,
+      "LightBleedingDelta": 0.4,
+      "ammoAccr": 0,
+      "ammoRec": 8,
+      "DurabilityBurnModificator": 1.55,
+      "HeatFactor": 2.4,
+      "MalfFeedChance": 0.07,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Superrare"
+    },
+    "locales": {
+      "en": {
+        "name": ".50 Beowulf Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "The .50 Beowulf (12.7x42mm RB) is a big-bore cartridge developed by Alexander Arms for the AR-15: a straight case with a rebated rim the size of the 7.62x39, feeding single-stack from standard magazines. Underwood's load with the 350-grain Lehigh Defense Xtreme Penetrator on Starline brass: a lead-free, solid copper monolithic bullet. Instead of expanding, the four flutes of its nose use the target's own fluids to throw high-pressure jets sideways, cutting a wide wound channel while the bullet keeps all of its weight and keeps driving deep."
+      },
+      "po": {
+        "name": ".50 Beowulf Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "O .50 Beowulf (12,7x42mm RB) é um cartucho de grosso calibre criado pela Alexander Arms para o AR-15: estojo reto com aro rebatido do tamanho do 7,62x39, alimentado em fila única por carregadores comuns. A carga da Underwood com o Lehigh Defense Xtreme Penetrator de 350 grãos, em estojo Starline: um projétil monolítico de cobre maciço, sem chumbo. Em vez de expandir, as quatro estrias do nariz usam os fluidos do próprio alvo para lançar jatos de alta pressão para os lados, abrindo um canal de ferimento largo enquanto o projétil mantém todo o peso e segue penetrando fundo."
+      },
+      "ru": {
+        "name": ".50 Beowulf Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "Патрон .50 Beowulf (12.7x42мм RB) — крупнокалиберный патрон, разработанный компанией Alexander Arms для AR-15: прямая гильза с выступающим фланцем размером с 7.62x39, подача в один ряд из обычных магазинов. Заряд Underwood с пулей Lehigh Defense Xtreme Penetrator массой 350 гран в гильзе Starline: бессвинцовая монолитная пуля из цельной меди. Вместо раскрытия четыре желоба в носовой части используют жидкости самой цели, чтобы выбрасывать струи под высоким давлением в стороны, создавая широкий раневой канал, пока пуля сохраняет весь свой вес и продолжает идти вглубь."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  }
+}

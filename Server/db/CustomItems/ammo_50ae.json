@@ -1,0 +1,56 @@
+{
+  "fc4a9f63b7be246fa0669c46": {
+    "itemTplToClone": "668fe62ac62660a5d8071446",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 1150,
+    "fleaPriceRoubles": 1550,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_127x33_la_ap.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "AmmoTooltipClass": "ArmorPiercing",
+      "RarityPvE": "Superrare",
+      "Damage": 70,
+      "PenetrationPower": 50,
+      "ArmorDamage": 65,
+      "InitialSpeed": 470,
+      "BulletMassGram": 16.2,
+      "BallisticCoeficient": 0.15,
+      "FragmentationChance": 0.02,
+      "PenetrationChanceObstacle": 0.45,
+      "RicochetChance": 0.12,
+      "HeavyBleedingDelta": 0,
+      "LightBleedingDelta": 0,
+      "ammoAccr": -5,
+      "ammoRec": 15,
+      "DurabilityBurnModificator": 2.0,
+      "HeatFactor": 2.5,
+      "MalfFeedChance": 0.05,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20
+    },
+    "locales": {
+      "en": {
+        "name": ".50 AE AP",
+        "shortName": "AP",
+        "description": "A .50 Action Express cartridge with a 250-grain armor-piercing bullet: a hardened steel penetrator in a copper jacket, its sharp tip exposed at the nose. It gives up some of the FMJ's stopping power for far better performance against body armor, and wears the barrel faster."
+      },
+      "po": {
+        "name": ".50 AE AP",
+        "shortName": "AP",
+        "description": "Cartucho .50 Action Express com projétil perfurante de 250 grãos: um penetrador de aço temperado numa jaqueta de cobre, com a ponta afiada exposta. Abre mão de parte do poder de parada da FMJ em troca de um desempenho muito melhor contra coletes, e desgasta o cano mais rápido."
+      },
+      "ru": {
+        "name": ".50 AE AP",
+        "shortName": "AP",
+        "description": "Патрон .50 Action Express (12.7x33мм) с бронебойной пулей массой 250 гран: пенетратор из закаленной стали в медной оболочке, острый кончик выступает вперед. Уступает FMJ в останавливающем действии, но намного лучше действует против бронежилетов, а ствол изнашивает быстрее."
+      }
+    },
+    "addCaliberToAllCloneLocations": true,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 1000
+  }
+}

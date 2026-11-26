@@ -1,0 +1,37 @@
+{
+  "67689886d281a6080adbdb51": {
+    "itemTplToClone": "54527a984bdc2d4e668b4567",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 220,
+    "fleaPriceRoubles": 330,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_556x45_loa_polymer.bundle",
+        "rcid": ""
+      },
+      "HeatFactor": 1.35,
+      "MalfFeedChance": 0.022,
+      "MalfMisfireChance": 0.18,
+      "Weight": 0.01
+    },
+    "locales": {
+      "en": {
+        "name": "5.56x45mm Polymer Case",
+        "shortName": "Polymer",
+        "description": "A 5.56x45mm cartridge with a polymer case. The polymer case is lightweight and corrosion-resistant, making it an excellent choice for training and range shooting."
+      },
+      "po": {
+        "name": "5.56x45mm Estojo de Polímero",
+        "shortName": "Polímero",
+        "description": "Um cartucho 5.56x45mm com estojo de polímero. O estojo de polímero é leve e resistente à corrosão, o que o torna uma ótima escolha para treino e tiro no estande."
+      },
+      "ru": {
+        "name": "5.56x45мм с полимерной гильзой",
+        "shortName": "Полимер",
+        "description": "Патрон 5.56x45мм с полимерной гильзой. Полимерная гильза легкая и устойчива к коррозии, что делает патрон отличным выбором для тренировок и стрельбы в тире."
+      }
+    },
+    "addCaliberToAllCloneLocations": true
+  }
+}

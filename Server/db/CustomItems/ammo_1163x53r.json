@@ -1,0 +1,374 @@
+{
+  "a2706c278469074839aad6b0": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 420,
+    "fleaPriceRoubles": 730,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_1163x53r_la_sp405.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber1163x53R",
+      "ExaminedByDefault": true,
+      "Weight": 0.043,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".45-70 Government",
+      "BulletDiameterMilimeters": 11.63,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 132,
+      "PenetrationPower": 18,
+      "ArmorDamage": 40,
+      "InitialSpeed": 405,
+      "BulletMassGram": 26.2,
+      "BallisticCoeficient": 0.281,
+      "FragmentationChance": 0.25,
+      "PenetrationChanceObstacle": 0.25,
+      "RicochetChance": 0.08,
+      "HeavyBleedingDelta": 0.15,
+      "LightBleedingDelta": 0.2,
+      "ammoAccr": 0,
+      "ammoRec": -4,
+      "DurabilityBurnModificator": 1.35,
+      "HeatFactor": 2.2,
+      "MalfFeedChance": 0.06,
+      "AmmoTooltipClass": "SoftTargets",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".45-70 Govt Core-Lokt SP",
+        "shortName": "SP",
+        "description": "The .45-70 Government (11.63x53mmR) is a black powder cartridge adopted by the US Army in 1873 for the Springfield \"Trapdoor\" rifle, still loaded today with smokeless powder for hunting heavy game. Remington's Core-Lokt load with a 405-grain soft point bullet: the classic hunting round, with controlled expansion and a heavy, slow hit."
+      },
+      "po": {
+        "name": ".45-70 Govt Core-Lokt SP",
+        "shortName": "SP",
+        "description": "O .45-70 Government (11,63x53mmR) é um cartucho de pólvora negra adotado pelo Exército dos EUA em 1873 para o rifle Springfield \"Trapdoor\", ainda carregado hoje com pólvora sem fumaça para caça grossa. A carga Core-Lokt da Remington com projétil de ponta macia de 405 grãos: o cartucho clássico de caça, com expansão controlada e impacto pesado e lento."
+      },
+      "ru": {
+        "name": ".45-70 Govt Core-Lokt SP",
+        "shortName": "SP",
+        "description": "Патрон .45-70 Government (11.63x53ммR) — патрон с дымным порохом, принятый на вооружение армией США в 1873 году для винтовки Springfield \"Trapdoor\"; его и сегодня снаряжают бездымным порохом для охоты на крупного зверя. Заряд Core-Lokt от Remington с пулей с мягким наконечником (Soft-Point) массой 405 гран: классический охотничий патрон с контролируемым раскрытием и тяжелым, но медленным ударом."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "9d192e1e08e9cdec89c586b4": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 620,
+    "fleaPriceRoubles": 1090,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_1163x53r_la_ftx325.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber1163x53R",
+      "ExaminedByDefault": true,
+      "Weight": 0.038,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".45-70 Government",
+      "BulletDiameterMilimeters": 11.63,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 138,
+      "PenetrationPower": 24,
+      "ArmorDamage": 46,
+      "InitialSpeed": 625,
+      "BulletMassGram": 21.1,
+      "BallisticCoeficient": 0.23,
+      "FragmentationChance": 0.3,
+      "PenetrationChanceObstacle": 0.3,
+      "RicochetChance": 0.1,
+      "HeavyBleedingDelta": 0.15,
+      "LightBleedingDelta": 0.15,
+      "ammoAccr": 8,
+      "ammoRec": 0,
+      "DurabilityBurnModificator": 1.3,
+      "HeatFactor": 2.1,
+      "MalfFeedChance": 0.05,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".45-70 Govt FTX",
+        "shortName": "FTX",
+        "description": "The .45-70 Government (11.63x53mmR) is a black powder cartridge adopted by the US Army in 1873 for the Springfield \"Trapdoor\" rifle, still loaded today with smokeless powder for hunting heavy game. Hornady's LEVERevolution load with a 325-grain FTX bullet: a polymer tip and a flatter trajectory, built for lever-action rifles with tubular magazines."
+      },
+      "po": {
+        "name": ".45-70 Govt FTX",
+        "shortName": "FTX",
+        "description": "O .45-70 Government (11,63x53mmR) é um cartucho de pólvora negra adotado pelo Exército dos EUA em 1873 para o rifle Springfield \"Trapdoor\", ainda carregado hoje com pólvora sem fumaça para caça grossa. A carga LEVERevolution da Hornady com projétil FTX de 325 grãos: ponta de polímero e trajetória mais tensa, feita para rifles de alavanca com carregador tubular."
+      },
+      "ru": {
+        "name": ".45-70 Govt FTX",
+        "shortName": "FTX",
+        "description": "Патрон .45-70 Government (11.63x53ммR) — патрон с дымным порохом, принятый на вооружение армией США в 1873 году для винтовки Springfield \"Trapdoor\"; его и сегодня снаряжают бездымным порохом для охоты на крупного зверя. Заряд LEVERevolution от Hornady с пулей FTX массой 325 гран: полимерный наконечник и более настильная траектория, создан для винтовок с рычажным взводом и трубчатым магазином."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "b95bf5b62d684bc1a5666f54": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 550,
+    "fleaPriceRoubles": 970,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_1163x53r_la_jhp300.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber1163x53R",
+      "ExaminedByDefault": true,
+      "Weight": 0.036,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".45-70 Government",
+      "BulletDiameterMilimeters": 11.63,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 158,
+      "PenetrationPower": 10,
+      "ArmorDamage": 30,
+      "InitialSpeed": 640,
+      "BulletMassGram": 19.4,
+      "BallisticCoeficient": 0.197,
+      "FragmentationChance": 0.45,
+      "PenetrationChanceObstacle": 0.15,
+      "RicochetChance": 0.05,
+      "HeavyBleedingDelta": 0.3,
+      "LightBleedingDelta": 0.3,
+      "ammoAccr": 0,
+      "ammoRec": 2,
+      "DurabilityBurnModificator": 1.3,
+      "HeatFactor": 2.2,
+      "MalfFeedChance": 0.07,
+      "AmmoTooltipClass": "SoftTargets",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": ".45-70 Govt JHP",
+        "shortName": "JHP",
+        "description": "The .45-70 Government (11.63x53mmR) is a black powder cartridge adopted by the US Army in 1873 for the Springfield \"Trapdoor\" rifle, still loaded today with smokeless powder for hunting heavy game. Underwood's load with a 300-grain Hornady jacketed hollow point: the lightest of the line and one of the fastest, it opens up violently in unprotected targets and is stopped by almost any armor."
+      },
+      "po": {
+        "name": ".45-70 Govt JHP",
+        "shortName": "JHP",
+        "description": "O .45-70 Government (11,63x53mmR) é um cartucho de pólvora negra adotado pelo Exército dos EUA em 1873 para o rifle Springfield \"Trapdoor\", ainda carregado hoje com pólvora sem fumaça para caça grossa. A carga da Underwood com uma ponta oca encamisada Hornady de 300 grãos: a mais leve da linha e uma das mais rápidas, abre com violência em alvos sem proteção e é parada por quase qualquer colete."
+      },
+      "ru": {
+        "name": ".45-70 Govt JHP",
+        "shortName": "JHP",
+        "description": "Патрон .45-70 Government (11.63x53ммR) — патрон с дымным порохом, принятый на вооружение армией США в 1873 году для винтовки Springfield \"Trapdoor\"; его и сегодня снаряжают бездымным порохом для охоты на крупного зверя. Заряд Underwood с экспансивной оболочечной пулей Hornady массой 300 гран: самый легкий в линейке и один из самых быстрых, яростно раскрывается в незащищенных целях и останавливается почти любой броней."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "1a1ce7b91d8f4d47e299b78a": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 980,
+    "fleaPriceRoubles": 1670,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_1163x53r_la_hc430.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber1163x53R",
+      "ExaminedByDefault": true,
+      "Weight": 0.045,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".45-70 Government",
+      "BulletDiameterMilimeters": 11.63,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 126,
+      "PenetrationPower": 36,
+      "ArmorDamage": 62,
+      "InitialSpeed": 587,
+      "BulletMassGram": 27.9,
+      "BallisticCoeficient": 0.26,
+      "FragmentationChance": 0.02,
+      "PenetrationChanceObstacle": 0.7,
+      "RicochetChance": 0.25,
+      "HeavyBleedingDelta": 0.25,
+      "LightBleedingDelta": 0.0,
+      "ammoAccr": 0,
+      "ammoRec": 12,
+      "DurabilityBurnModificator": 1.5,
+      "HeatFactor": 2.3,
+      "MalfFeedChance": 0.06,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Superrare"
+    },
+    "locales": {
+      "en": {
+        "name": ".45-70 Govt Hard Cast",
+        "shortName": "HC",
+        "description": "The .45-70 Government (11.63x53mmR) is a black powder cartridge adopted by the US Army in 1873 for the Springfield \"Trapdoor\" rifle, still loaded today with smokeless powder for hunting heavy game. Buffalo Bore's load with a 430-grain hard cast lead LBT-LFN bullet: it does not expand and pushes deep through heavy bone and thick hide, with a strong recoil."
+      },
+      "po": {
+        "name": ".45-70 Govt Hard Cast",
+        "shortName": "HC",
+        "description": "O .45-70 Government (11,63x53mmR) é um cartucho de pólvora negra adotado pelo Exército dos EUA em 1873 para o rifle Springfield \"Trapdoor\", ainda carregado hoje com pólvora sem fumaça para caça grossa. A carga da Buffalo Bore com projétil de chumbo endurecido LBT-LFN de 430 grãos: não expande e atravessa osso pesado e couro grosso, com recuo forte."
+      },
+      "ru": {
+        "name": ".45-70 Govt Hard Cast",
+        "shortName": "HC",
+        "description": "Патрон .45-70 Government (11.63x53ммR) — патрон с дымным порохом, принятый на вооружение армией США в 1873 году для винтовки Springfield \"Trapdoor\"; его и сегодня снаряжают бездымным порохом для охоты на крупного зверя. Заряд Buffalo Bore с пулей из закаленного свинца LBT-LFN массой 430 гран: не раскрывается, пробивает тяжелую кость и толстую шкуру, отдача сильная."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "8d02a933231150ef18c66c1b": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 1270,
+    "fleaPriceRoubles": 2160,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_1163x53r_la_xp305.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber1163x53R",
+      "ExaminedByDefault": true,
+      "Weight": 0.037,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".45-70 Government",
+      "BulletDiameterMilimeters": 11.63,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 118,
+      "PenetrationPower": 43,
+      "ArmorDamage": 66,
+      "InitialSpeed": 640,
+      "BulletMassGram": 19.8,
+      "BallisticCoeficient": 0.195,
+      "FragmentationChance": 0.0,
+      "PenetrationChanceObstacle": 0.7,
+      "RicochetChance": 0.25,
+      "HeavyBleedingDelta": 0.3,
+      "LightBleedingDelta": 0.0,
+      "ammoAccr": 0,
+      "ammoRec": 6,
+      "DurabilityBurnModificator": 1.55,
+      "HeatFactor": 2.4,
+      "MalfFeedChance": 0.07,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Superrare"
+    },
+    "locales": {
+      "en": {
+        "name": ".45-70 Govt Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "The .45-70 Government (11.63x53mmR) is a black powder cartridge adopted by the US Army in 1873 for the Springfield \"Trapdoor\" rifle, still loaded today with smokeless powder for hunting heavy game. Underwood's load with the 305-grain Lehigh Defense Xtreme Penetrator: a solid copper monolithic bullet that does not expand and keeps all of its weight, for deep penetration without a steel core."
+      },
+      "po": {
+        "name": ".45-70 Govt Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "O .45-70 Government (11,63x53mmR) é um cartucho de pólvora negra adotado pelo Exército dos EUA em 1873 para o rifle Springfield \"Trapdoor\", ainda carregado hoje com pólvora sem fumaça para caça grossa. A carga da Underwood com o Lehigh Defense Xtreme Penetrator de 305 grãos: um projétil monolítico de cobre maciço que não expande e mantém todo o peso, para uma penetração profunda sem núcleo de aço."
+      },
+      "ru": {
+        "name": ".45-70 Govt Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "Патрон .45-70 Government (11.63x53ммR) — патрон с дымным порохом, принятый на вооружение армией США в 1873 году для винтовки Springfield \"Trapdoor\"; его и сегодня снаряжают бездымным порохом для охоты на крупного зверя. Заряд Underwood с Lehigh Defense Xtreme Penetrator массой 305 гран: монолитная пуля из цельной меди, которая не раскрывается и сохраняет весь вес, для глубокой пробиваемости без стального сердечника."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "4c22baa7918ff03793b0a92f": {
+    "itemTplToClone": "5cadf6eeae921500134b2799",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 1780,
+    "fleaPriceRoubles": 3040,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_1163x53r_la_ap.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber1163x53R",
+      "ExaminedByDefault": true,
+      "Weight": 0.041,
+      "StackMaxSize": 30,
+      "StackMinRandom": 5,
+      "StackMaxRandom": 20,
+      "casingMass": 16,
+      "casingName": ".45-70 Government",
+      "BulletDiameterMilimeters": 11.63,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 108,
+      "PenetrationPower": 52,
+      "ArmorDamage": 78,
+      "InitialSpeed": 701,
+      "BulletMassGram": 22.7,
+      "BallisticCoeficient": 0.25,
+      "FragmentationChance": 0.05,
+      "PenetrationChanceObstacle": 0.7,
+      "RicochetChance": 0.25,
+      "HeavyBleedingDelta": 0.2,
+      "LightBleedingDelta": 0.0,
+      "ammoAccr": -2,
+      "ammoRec": 18,
+      "DurabilityBurnModificator": 1.94,
+      "HeatFactor": 3.0,
+      "MalfFeedChance": 0.09,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Superrare"
+    },
+    "locales": {
+      "en": {
+        "name": ".45-70 Govt AP",
+        "shortName": "AP",
+        "description": "The .45-70 Government (11.63x53mmR) is a black powder cartridge adopted by the US Army in 1873 for the Springfield \"Trapdoor\" rifle, still loaded today with smokeless powder for hunting heavy game. A special hot load made for the mod: a 350-grain bullet with a copper jacket and an exposed hardened steel penetrator, over a powder charge well above factory pressure. It defeats heavy armor, but the recoil is brutal and it punishes the barrel and the action."
+      },
+      "po": {
+        "name": ".45-70 Govt AP",
+        "shortName": "AP",
+        "description": "O .45-70 Government (11,63x53mmR) é um cartucho de pólvora negra adotado pelo Exército dos EUA em 1873 para o rifle Springfield \"Trapdoor\", ainda carregado hoje com pólvora sem fumaça para caça grossa. Uma carga especial \"quente\" feita para o mod: projétil de 350 grãos com jaqueta de cobre e penetrador de aço endurecido exposto, sobre uma carga de pólvora bem acima da pressão de fábrica. Vence blindagem pesada, mas o recuo é brutal e castiga o cano e o mecanismo da arma."
+      },
+      "ru": {
+        "name": ".45-70 Govt AP",
+        "shortName": "AP",
+        "description": "Патрон .45-70 Government (11.63x53ммR) — патрон с дымным порохом, принятый на вооружение армией США в 1873 году для винтовки Springfield \"Trapdoor\"; его и сегодня снаряжают бездымным порохом для охоты на крупного зверя. Особый \"горячий\" заряд, созданный для мода: пуля массой 350 гран в медной оболочке с открытым пенетратором из закаленной стали и пороховым зарядом заметно выше заводского давления. Пробивает тяжелую броню, но отдача чудовищная, а ствол и механизм оружия изнашиваются."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  }
+}

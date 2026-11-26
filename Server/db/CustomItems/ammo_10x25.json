@@ -1,0 +1,250 @@
+{
+  "e8f5463abdd2b4543ad8d06b": {
+    "itemTplToClone": "5e81f423763d9f754677bf2e",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 140,
+    "fleaPriceRoubles": 260,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_10x25_la_fmj.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber10x25",
+      "ExaminedByDefault": true,
+      "Weight": 0.017,
+      "StackMaxSize": 50,
+      "StackMinRandom": 10,
+      "StackMaxRandom": 30,
+      "casingMass": 6.5,
+      "casingName": "10mm Auto",
+      "BulletDiameterMilimeters": 10.17,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 75,
+      "PenetrationPower": 28,
+      "ArmorDamage": 42,
+      "InitialSpeed": 355,
+      "BulletMassGram": 11.66,
+      "BallisticCoeficient": 0.17,
+      "FragmentationChance": 0.05,
+      "PenetrationChanceObstacle": 0.35,
+      "RicochetChance": 0.1,
+      "HeavyBleedingDelta": 0.0,
+      "LightBleedingDelta": 0.0,
+      "ammoAccr": 0,
+      "ammoRec": 0,
+      "DurabilityBurnModificator": 1.1,
+      "HeatFactor": 1.3,
+      "MalfFeedChance": 0.03,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Common"
+    },
+    "locales": {
+      "en": {
+        "name": "10mm Auto FMJ",
+        "shortName": "FMJ",
+        "description": "The 10mm Auto (10x25mm) was developed in the early 1980s around Jeff Cooper's idea of a flat-shooting, hard-hitting service pistol cartridge, and at full power it is one of the strongest rounds a standard-size pistol can fire. This Sellier & Bellot load carries a 180-grain full metal jacket flat-nose bullet: the plain all-round option of the caliber."
+      },
+      "po": {
+        "name": "10mm Auto FMJ",
+        "shortName": "FMJ",
+        "description": "O 10mm Auto (10x25mm) nasceu no começo dos anos 1980 em torno da ideia de Jeff Cooper de um cartucho de pistola de serviço de trajetória tensa e impacto forte; em carga plena é um dos mais potentes que uma pistola de tamanho padrão dispara. Esta carga da Sellier & Bellot leva um projétil encamisado de ponta chata de 180 grãos: a opção simples, para tudo, do calibre."
+      },
+      "ru": {
+        "name": "10mm Auto FMJ",
+        "shortName": "FMJ",
+        "description": "Патрон 10mm Auto (10x25мм) был разработан в начале 1980-х по замыслу Джеффа Купера о пистолетном патроне для службы с настильной траекторией и сильным ударом; при полной мощности это один из самых мощных патронов, которые способен стрелять пистолет стандартного размера. Этот заряд Sellier & Bellot несет цельнооболочечную пулю с плоским носом массой 180 гран: простой универсальный вариант калибра."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "56379d5cf94c8205b6310193": {
+    "itemTplToClone": "5e81f423763d9f754677bf2e",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 170,
+    "fleaPriceRoubles": 320,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_10x25_la_jhp.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber10x25",
+      "ExaminedByDefault": true,
+      "Weight": 0.017,
+      "StackMaxSize": 50,
+      "StackMinRandom": 10,
+      "StackMaxRandom": 30,
+      "casingMass": 6.5,
+      "casingName": "10mm Auto",
+      "BulletDiameterMilimeters": 10.17,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 95,
+      "PenetrationPower": 14,
+      "ArmorDamage": 28,
+      "InitialSpeed": 389,
+      "BulletMassGram": 11.66,
+      "BallisticCoeficient": 0.165,
+      "FragmentationChance": 0.25,
+      "PenetrationChanceObstacle": 0.1,
+      "RicochetChance": 0.03,
+      "HeavyBleedingDelta": 0.15,
+      "LightBleedingDelta": 0.3,
+      "ammoAccr": 5,
+      "ammoRec": 3,
+      "DurabilityBurnModificator": 1.15,
+      "HeatFactor": 1.35,
+      "MalfFeedChance": 0.035,
+      "AmmoTooltipClass": "SoftTargets",
+      "RarityPvE": "Common"
+    },
+    "locales": {
+      "en": {
+        "name": "10mm Auto XTP JHP",
+        "shortName": "XTP",
+        "description": "The 10mm Auto (10x25mm) was developed in the early 1980s around Jeff Cooper's idea of a flat-shooting, hard-hitting service pistol cartridge, and at full power it is one of the strongest rounds a standard-size pistol can fire. Hornady's Custom load with the 180-grain XTP jacketed hollow point at full 10mm velocity: controlled expansion and a very heavy hit on unprotected targets, stopped by almost any armor."
+      },
+      "po": {
+        "name": "10mm Auto XTP JHP",
+        "shortName": "XTP",
+        "description": "O 10mm Auto (10x25mm) nasceu no começo dos anos 1980 em torno da ideia de Jeff Cooper de um cartucho de pistola de serviço de trajetória tensa e impacto forte; em carga plena é um dos mais potentes que uma pistola de tamanho padrão dispara. A carga Custom da Hornady com a ponta oca encamisada XTP de 180 grãos em velocidade plena de 10mm: expansão controlada e impacto muito pesado em alvos sem proteção, parada por quase qualquer colete."
+      },
+      "ru": {
+        "name": "10mm Auto XTP JHP",
+        "shortName": "XTP",
+        "description": "Патрон 10mm Auto (10x25мм) был разработан в начале 1980-х по замыслу Джеффа Купера о пистолетном патроне для службы с настильной траекторией и сильным ударом; при полной мощности это один из самых мощных патронов, которые способен стрелять пистолет стандартного размера. Заряд Hornady Custom с экспансивной оболочечной пулей XTP массой 180 гран на полной скорости 10mm: контролируемое раскрытие и очень тяжелый удар по незащищенным целям; останавливается почти любой броней."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "2cd7fe765b5c4c3d0c658dc0": {
+    "itemTplToClone": "5e81f423763d9f754677bf2e",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 420,
+    "fleaPriceRoubles": 760,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_10x25_la_xp.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber10x25",
+      "ExaminedByDefault": true,
+      "Weight": 0.017,
+      "StackMaxSize": 50,
+      "StackMinRandom": 10,
+      "StackMaxRandom": 30,
+      "casingMass": 6.5,
+      "casingName": "10mm Auto",
+      "BulletDiameterMilimeters": 10.17,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 64,
+      "PenetrationPower": 33,
+      "ArmorDamage": 48,
+      "InitialSpeed": 457,
+      "BulletMassGram": 9.07,
+      "BallisticCoeficient": 0.13,
+      "FragmentationChance": 0.0,
+      "PenetrationChanceObstacle": 0.6,
+      "RicochetChance": 0.2,
+      "HeavyBleedingDelta": 0.2,
+      "LightBleedingDelta": 0.3,
+      "ammoAccr": 0,
+      "ammoRec": 6,
+      "DurabilityBurnModificator": 1.4,
+      "HeatFactor": 1.5,
+      "MalfFeedChance": 0.035,
+      "AmmoTooltipClass": "Universal",
+      "RarityPvE": "Rare"
+    },
+    "locales": {
+      "en": {
+        "name": "10mm Auto Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "The 10mm Auto (10x25mm) was developed in the early 1980s around Jeff Cooper's idea of a flat-shooting, hard-hitting service pistol cartridge, and at full power it is one of the strongest rounds a standard-size pistol can fire. Underwood's load with the 140-grain Lehigh Defense Xtreme Penetrator in a nickel-plated case: a lead-free, solid copper bullet whose cross-shaped nose does not expand. The four scoops throw fluid sideways and the bullet keeps all of its weight, driving deep through barriers and soft armor."
+      },
+      "po": {
+        "name": "10mm Auto Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "O 10mm Auto (10x25mm) nasceu no começo dos anos 1980 em torno da ideia de Jeff Cooper de um cartucho de pistola de serviço de trajetória tensa e impacto forte; em carga plena é um dos mais potentes que uma pistola de tamanho padrão dispara. A carga da Underwood com o Lehigh Defense Xtreme Penetrator de 140 grãos em estojo niquelado: projétil de cobre maciço, sem chumbo, com a ponta em cruz que não expande. Os quatro sulcos jogam fluido para os lados e o projétil mantém todo o peso, atravessando fundo barreiras e coletes leves."
+      },
+      "ru": {
+        "name": "10mm Auto Xtreme Penetrator",
+        "shortName": "XP",
+        "description": "Патрон 10mm Auto (10x25мм) был разработан в начале 1980-х по замыслу Джеффа Купера о пистолетном патроне для службы с настильной траекторией и сильным ударом; при полной мощности это один из самых мощных патронов, которые способен стрелять пистолет стандартного размера. Заряд Underwood с пулей Lehigh Defense Xtreme Penetrator массой 140 гран в никелированной гильзе: бессвинцовая пуля из цельной меди с крестообразным носом, которая не раскрывается. Четыре желоба отбрасывают жидкость в стороны, а пуля сохраняет весь вес и глубоко проходит сквозь преграды и легкую броню."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  },
+  "e3f78a76321aaa8a7523cd92": {
+    "itemTplToClone": "5e81f423763d9f754677bf2e",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "handbookPriceRoubles": 640,
+    "fleaPriceRoubles": 1150,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "patron_10x25_la_ap.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber10x25",
+      "ExaminedByDefault": true,
+      "Weight": 0.017,
+      "StackMaxSize": 50,
+      "StackMinRandom": 10,
+      "StackMaxRandom": 30,
+      "casingMass": 6.5,
+      "casingName": "10mm Auto",
+      "BulletDiameterMilimeters": 10.17,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "Damage": 60,
+      "PenetrationPower": 42,
+      "ArmorDamage": 56,
+      "InitialSpeed": 410,
+      "BulletMassGram": 10.4,
+      "BallisticCoeficient": 0.16,
+      "FragmentationChance": 0.01,
+      "PenetrationChanceObstacle": 0.75,
+      "RicochetChance": 0.3,
+      "HeavyBleedingDelta": 0.0,
+      "LightBleedingDelta": 0.0,
+      "ammoAccr": -3,
+      "ammoRec": 10,
+      "DurabilityBurnModificator": 1.8,
+      "HeatFactor": 1.7,
+      "MalfFeedChance": 0.04,
+      "AmmoTooltipClass": "ArmorPiercing",
+      "RarityPvE": "Superrare"
+    },
+    "locales": {
+      "en": {
+        "name": "10mm Auto AP",
+        "shortName": "AP",
+        "description": "The 10mm Auto (10x25mm) was developed in the early 1980s around Jeff Cooper's idea of a flat-shooting, hard-hitting service pistol cartridge, and at full power it is one of the strongest rounds a standard-size pistol can fire. An armor-piercing load built on Starline brass: a sharp hardened steel cone stands out of a short copper jacket. It gives up stopping power for penetration and is hard on the barrel."
+      },
+      "po": {
+        "name": "10mm Auto AP",
+        "shortName": "AP",
+        "description": "O 10mm Auto (10x25mm) nasceu no começo dos anos 1980 em torno da ideia de Jeff Cooper de um cartucho de pistola de serviço de trajetória tensa e impacto forte; em carga plena é um dos mais potentes que uma pistola de tamanho padrão dispara. Carga perfurante montada em estojo Starline: um cone agudo de aço temperado sai de uma jaqueta curta de cobre. Troca poder de parada por penetração e castiga o cano."
+      },
+      "ru": {
+        "name": "10mm Auto AP",
+        "shortName": "AP",
+        "description": "Патрон 10mm Auto (10x25мм) был разработан в начале 1980-х по замыслу Джеффа Купера о пистолетном патроне для службы с настильной траекторией и сильным ударом; при полной мощности это один из самых мощных патронов, которые способен стрелять пистолет стандартного размера. Бронебойный заряд в гильзе Starline: острый конус из закаленной стали выступает из короткой медной оболочки. Меняет останавливающее действие на пробиваемость и изнашивает ствол."
+      }
+    },
+    "addCaliberToAllCloneLocations": false
+  }
+}

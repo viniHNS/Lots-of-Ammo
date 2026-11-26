@@ -1,0 +1,334 @@
+{
+  "6911031c1e9fa1008ce6e1aa": {
+    "itemTplToClone": "560d5e524bdc2d25448b4571",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/winchester12.bundle",
+        "rcid": ""
+      },
+      "PenetrationPower": 4,
+      "ArmorDamage": 28,
+      "BulletDiameterMilimeters": 8.5,
+      "ammoAccr": -1,
+      "ammoRec": 20,
+      "ProjectileCount": 6,
+      "HeatFactor": 2.1,
+      "StackMaxSize": 20
+    },
+    "locales": {
+      "en": {
+        "name": "12/70 Winchester Super-X 00 buckshot",
+        "shortName": "12/70 00",
+        "description": "A 12-gauge 00 buckshot shell by Winchester. The 00 buckshot is a 6-pellet shell, with each pellet being 8.4mm in diameter. The shell is designed for hunting and self-defense."
+      },
+      "po": {
+        "name": "12/70 Chumbo Grosso 00 Winchester Super-X",
+        "shortName": "12/70 00",
+        "description": "Cartucho calibre 12 com chumbo grosso 00 da Winchester. O chumbo grosso 00 leva 6 esferas, cada uma com 8,4 mm de diâmetro. O cartucho foi projetado para caça e defesa pessoal."
+      },
+      "ru": {
+        "name": "12/70 картечь 00 Winchester Super-X",
+        "shortName": "12/70 00",
+        "description": "Патрон 12 калибра с картечью 00 производства Winchester. Снаряжён 6 картечинами диаметром 8,4мм. Предназначен для охоты и самообороны."
+      }
+    },
+    "addCaliberToAllCloneLocations": true,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 5,
+    "addtoStaticLootContainers": true,
+    "staticLootContainers": [
+      {
+        "containerName": "LOOTCONTAINER_DEAD_SCAV",
+        "probability": 10
+      }
+    ],
+    "fleaPriceRoubles": 100,
+    "handbookPriceRoubles": 40,
+    "addtoSecureFilters": true
+  },
+  "69111bf76c4be2b06bd0745c": {
+    "itemTplToClone": "5d6e6806a4b936088465b17e",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/magnum_express.bundle",
+        "rcid": ""
+      },
+      "PenetrationPower": 4,
+      "ArmorDamage": 33,
+      "BulletDiameterMilimeters": 8.5,
+      "ammoAccr": -18,
+      "ammoRec": 135,
+      "Damage": 54,
+      "ProjectileCount": 9,
+      "HeatFactor": 2.3,
+      "StackMaxSize": 20
+    },
+    "locales": {
+      "en": {
+        "name": "12/70 Magnum Express Kinghunter",
+        "shortName": "12/70 Magnum",
+        "description": "A 12-gauge Magnum Express Kinghunter shell made in USA. The shell contains 9 pellets. The shell is designed for hunting and self-defense."
+      },
+      "po": {
+        "name": "12/70 Magnum Express Kinghunter",
+        "shortName": "12/70 Magnum",
+        "description": "Cartucho calibre 12 Magnum Express Kinghunter, fabricado nos EUA. O cartucho contém 9 esferas e foi projetado para caça e defesa pessoal."
+      },
+      "ru": {
+        "name": "12/70 картечь \"Магнум Экспресс\" Kinghunter",
+        "shortName": "12/70 Магнум",
+        "description": "Патрон 12 калибра Magnum Express Kinghunter американского производства. Снаряжён 9 картечинами. Предназначен для охоты и самообороны."
+      }
+    },
+    "addCaliberToAllCloneLocations": true,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 3,
+    "addtoStaticLootContainers": true,
+    "staticLootContainers": [
+      {
+        "containerName": "LOOTCONTAINER_DEAD_SCAV",
+        "probability": 6
+      }
+    ],
+    "fleaPriceRoubles": 120,
+    "handbookPriceRoubles": 50,
+    "addtoSecureFilters": true
+  },
+  "69111d386d6226b577e619b1": {
+    "itemTplToClone": "5d6e68a8a4b9360b6c0d54e2",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/ap.bundle",
+        "rcid": ""
+      },
+      "PenetrationPower": 40,
+      "PenetrationChanceObstacle": 0.4,
+      "ArmorDamage": 71,
+      "BulletDiameterMilimeters": 12.7,
+      "ammoAccr": 65,
+      "Damage": 155,
+      "ammoRec": 70,
+      "HeatFactor": 2.5,
+      "StackMaxSize": 20
+    },
+    "locales": {
+      "en": {
+        "name": "12/70 armor-piercing Slug “SVAROG”",
+        "shortName": "12/70 SVAROG",
+        "description": "A 12-gauge armor-piercing Slug shell developed by SVAROG. The shell is designed to penetrate armor, stopping vehicles and penetrating targets behind cover."
+      },
+      "po": {
+        "name": "12/70 Balote Perfurante “SVAROG”",
+        "shortName": "12/70 SVAROG",
+        "description": "Cartucho calibre 12 com balote perfurante de blindagem desenvolvido pela SVAROG. Projetado para penetrar blindagem, parar veículos e atingir alvos atrás de cobertura."
+      },
+      "ru": {
+        "name": "12/70 бронебойная пуля \"СВАРОГ\"",
+        "shortName": "12/70 СВАРОГ",
+        "description": "Бронебойный пулевой патрон 12 калибра, разработанный компанией \"СВАРОГ\". Пуля рассчитана на пробитие бронезащиты, остановку транспорта и поражение целей за укрытиями."
+      }
+    },
+    "addCaliberToAllCloneLocations": true,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 1,
+    "addtoStaticLootContainers": true,
+    "staticLootContainers": [
+      {
+        "containerName": "LOOTCONTAINER_DEAD_SCAV",
+        "probability": 1
+      }
+    ],
+    "fleaPriceRoubles": 1000,
+    "handbookPriceRoubles": 800,
+    "addtoSecureFilters": true
+  },
+  "69111e8fab39296e6f0f310a": {
+    "itemTplToClone": "5d6e6911a4b9361bd5780d52",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/flechette_ammo.bundle",
+        "rcid": ""
+      },
+      "PenetrationPower": 35,
+      "PenetrationChanceObstacle": 0.35,
+      "ArmorDamage": 28,
+      "BulletDiameterMilimeters": 2,
+      "ammoAccr": -13,
+      "Damage": 23,
+      "ammoRec": 15,
+      "HeatFactor": 2.3,
+      "ProjectileCount": 10,
+      "StackMaxSize": 20
+    },
+    "locales": {
+      "en": {
+        "name": "12/70 Flechette Kinghunter",
+        "shortName": "12/70 Flechette",
+        "description": "A 12-gauge Flechette Kinghunter shell made in USA. The shell contains 10 flechettes made of tungsten alloy. You definitely don't want to be on the receiving end of the weapon loaded with it."
+      },
+      "po": {
+        "name": "12/70 Flechette Kinghunter",
+        "shortName": "12/70 Flech.",
+        "description": "Cartucho calibre 12 Flechette Kinghunter, fabricado nos EUA. O cartucho contém 10 flechettes de liga de tungstênio. Você definitivamente não quer estar do outro lado da arma carregada com ele."
+      },
+      "ru": {
+        "name": "12/70 флешетта Kinghunter",
+        "shortName": "12/70 флешетта",
+        "description": "Патрон 12 калибра Flechette Kinghunter американского производства. Снаряжён 10 флешеттами из вольфрамового сплава. Оказаться на другом конце заряженного им ствола точно не захочется."
+      }
+    },
+    "addCaliberToAllCloneLocations": true,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 2,
+    "addtoStaticLootContainers": true,
+    "staticLootContainers": [
+      {
+        "containerName": "LOOTCONTAINER_DEAD_SCAV",
+        "probability": 3
+      }
+    ],
+    "fleaPriceRoubles": 700,
+    "handbookPriceRoubles": 351,
+    "addtoSecureFilters": true
+  },
+  "6911202ab8757755a4d62f3c": {
+    "itemTplToClone": "560d5e524bdc2d25448b4571",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/12ga_brass.bundle",
+        "rcid": ""
+      },
+      "PenetrationPower": 2,
+      "ArmorDamage": 22,
+      "BulletDiameterMilimeters": 7,
+      "ammoAccr": -1,
+      "Damage": 41,
+      "ProjectileCount": 10,
+      "HeatFactor": 1.9,
+      "MalfMisfireChance": 0.18,
+      "StackMaxSize": 20
+    },
+    "locales": {
+      "en": {
+        "name": "12/70 7mm Buckshot Brass Case",
+        "shortName": "12/70 Brass",
+        "description": "A 12/70 buckshot with a brass case and a brass head. The brass case is reloadable and offers better corrosion resistance than steel cases. The brass head ensures reliable extraction and feeding in shotguns."
+      },
+      "po": {
+        "name": "12/70 Chumbo Grosso 7mm com Estojo de Latão",
+        "shortName": "12/70 Latão",
+        "description": "Chumbo grosso 12/70 com estojo e culote de latão. O estojo de latão é recarregável e resiste melhor à corrosão que os estojos de aço. O culote de latão garante extração e alimentação confiáveis em escopetas."
+      },
+      "ru": {
+        "name": "12/70 7мм картечь в латунной гильзе",
+        "shortName": "12/70 латунь",
+        "description": "Картечный патрон 12/70 в латунной гильзе с латунным донцем. Латунная гильза пригодна для переснаряжения и лучше стальной противостоит коррозии, а латунное донце обеспечивает надёжное извлечение и подачу в дробовиках."
+      }
+    },
+    "addCaliberToAllCloneLocations": true,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 4,
+    "addtoStaticLootContainers": true,
+    "staticLootContainers": [
+      {
+        "containerName": "LOOTCONTAINER_DEAD_SCAV",
+        "probability": 30
+      }
+    ],
+    "fleaPriceRoubles": 50,
+    "handbookPriceRoubles": 24,
+    "addtoSecureFilters": true
+  },
+  "699358094978fa2d65f4dcf3": {
+    "itemTplToClone": "5d6e6891a4b9361bd473feea",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/12ga_frag12.bundle",
+        "rcid": ""
+      },
+      "BulletMassGram": 40,
+      "BulletDiameterMilimeters": 16,
+      "InitialSpeed": 320,
+      "BallisticCoeficient": 0.25,
+      "Damage": 203,
+      "ammoAccr": 160,
+      "ammoRec": 25,
+      "PenetrationPower": 30,
+      "FragmentationChance": 0.1,
+      "ArmorDamage": 60,
+      "StaminaBurnPerDamage": 0.85,
+      "HasGrenaderComponent": true,
+      "FuzeArmTimeSec": 0.02,
+      "ExplosionStrength": 25,
+      "MinExplosionDistance": 0.5,
+      "MaxExplosionDistance": 1.0,
+      "FragmentsCount": 5,
+      "FragmentType": "5943d9c186f7745a13413ac9",
+      "ExplosionType": "smallgrenade_expl",
+      "Contusion": {
+        "x": 1,
+        "y": 3,
+        "z": 6
+      },
+      "ProjectileCount": 1,
+      "HeatFactor": 4,
+      "DurabilityBurnModificator": 2,
+      "MalfMisfireChance": 0.2,
+      "MalfFeedChance": 0.3,
+      "MisfireChance": 0.2,
+      "HeavyBleedingDelta": 0.05,
+      "LightBleedingDelta": 0.2,
+      "Tracer": false,
+      "ShowBullet": true,
+      "StackMaxSize": 20
+    },
+    "locales": {
+      "en": {
+        "name": "12/70 'FRAG-12'",
+        "shortName": "FRAG-12",
+        "description": "An experimental military-grade 12-gauge shell containing a High-Explosive (HE) warhead. Designed for urban warfare to breach barricades and disable light vehicles. Upon impact, the warhead detonates, dealing massive explosive trauma and shredding armor plates. Due to its fin-stabilized flight, it is highly accurate at range. Warning: Firing at point-blank range may result in lethal splash damage to the operator."
+      },
+      "po": {
+        "name": "12/70 'FRAG-12'",
+        "shortName": "FRAG-12",
+        "description": "Cartucho experimental de calibre 12, de nível militar, com ogiva de alto poder explosivo (HE). Projetado para combate urbano, abre barricadas e inutiliza veículos leves. No impacto a ogiva detona, causando trauma explosivo massivo e estilhaçando placas de blindagem. Por ter voo estabilizado por aletas, é muito preciso a distância. Aviso: disparar à queima-roupa pode causar dano letal de estilhaços ao operador."
+      },
+      "ru": {
+        "name": "12/70 \"FRAG-12\"",
+        "shortName": "FRAG-12",
+        "description": "Экспериментальный армейский патрон 12 калибра с осколочно-фугасной боевой частью. Создан для городских боёв: проламывать баррикады и выводить из строя лёгкую технику. При попадании боевая часть детонирует, нанося тяжёлые взрывные ранения и кромсая бронепластины. Благодаря стабилизации оперением очень точен на дистанции. Внимание: выстрел в упор может смертельно ранить самого стрелка."
+      }
+    },
+    "addCaliberToAllCloneLocations": true,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 1,
+    "addtoStaticLootContainers": true,
+    "staticLootContainers": [
+      {
+        "containerName": "LOOTCONTAINER_DEAD_SCAV",
+        "probability": 1
+      }
+    ],
+    "fleaPriceRoubles": 1600,
+    "handbookPriceRoubles": 1200,
+    "addtoSecureFilters": true
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "6910e1cbbd20f63a9791742e": {
+    "itemTplToClone": "67dc212493ce32834b0fa446",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/700NITRO_FMJ.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.13,
+      "Caliber": "Caliber178x89",
+      "InitialSpeed": 605,
+      "BallisticCoeficient": 0.28,
+      "SpeedRetardation": 9e-05,
+      "BulletMassGram": 64.8,
+      "BulletDiameterMilimeters": 18.03,
+      "Damage": 280,
+      "ArmorDamage": 600,
+      "PenetrationPower": 19,
+      "PenetrationPowerDiviation": 1,
+      "PenetrationChanceObstacle": 0.7,
+      "PenetrationDamageMod": 0.25,
+      "FragmentationChance": 0.02,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 1,
+      "RicochetChance": 0.05,
+      "HeavyBleedingDelta": 0.55,
+      "LightBleedingDelta": 0.75,
+      "ammoRec": 20,
+      "casingMass": 40,
+      "casingName": "17.8x89",
+      "StackMaxSize": 10
+    },
+    "locales": {
+      "en": {
+        "name": ".700 Nitro Express FMJ",
+        "shortName": ".700 FMJ",
+        "description": "The .700 Nitro Express (17.8×89mmR) is a big game rifle cartridge made by Holland & Holland, London, England. It was developed in 1988 by Jim Bell and William Feldstein and built by H&H. The recoil is substantial, and the rifle is only available from H&H as a bespoke item. The .700 Nitro Express is a straight rimmed cartridge designed for use in single-shot and double rifles."
+      },
+      "po": {
+        "name": ".700 Nitro Express FMJ",
+        "shortName": ".700 FMJ",
+        "description": "O .700 Nitro Express (17,8×89mmR) é um cartucho de rifle para caça grossa criado pela Holland & Holland, de Londres, Inglaterra. Foi desenvolvido em 1988 por Jim Bell e William Feldstein e produzido pela H&H. O recuo é enorme, e o rifle só é vendido pela H&H sob encomenda. O .700 Nitro Express é um cartucho reto com aro, projetado para rifles de tiro único e de cano duplo."
+      },
+      "ru": {
+        "name": ".700 Nitro Express FMJ",
+        "shortName": ".700 FMJ",
+        "description": ".700 Nitro Express (17.8×89мм R) — патрон для охоты на крупную дичь, выпускаемый лондонской фирмой Holland & Holland. Разработан в 1988 году Джимом Беллом и Уильямом Фельдстейном и запущен в производство H&H. Отдача огромна, а винтовки под него H&H делает только на заказ. Это прямой патрон с закраиной, предназначенный для однозарядных винтовок и двуствольных штуцеров."
+      }
+    },
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 1,
+    "addtoStaticLootContainers": true,
+    "staticLootContainers": [
+      {
+        "containerName": "LOOTCONTAINER_DEAD_SCAV",
+        "probability": 2
+      }
+    ],
+    "fleaPriceRoubles": 2900,
+    "handbookPriceRoubles": 1710,
+    "addtoSecureFilters": true
+  },
+  "25c870f3b572c2f2db00bfb8": {
+    "itemTplToClone": "67dc212493ce32834b0fa446",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/700NITRO_SP_MAMMOTH.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.13,
+      "Caliber": "Caliber178x89",
+      "InitialSpeed": 605,
+      "BallisticCoeficient": 0.28,
+      "SpeedRetardation": 9e-05,
+      "BulletMassGram": 64.8,
+      "BulletDiameterMilimeters": 18.03,
+      "Damage": 430,
+      "ArmorDamage": 90,
+      "ammoRec": 25,
+      "PenetrationPower": 15,
+      "PenetrationPowerDiviation": 1,
+      "PenetrationChanceObstacle": 0.7,
+      "PenetrationDamageMod": 0.25,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "RicochetChance": 0.05,
+      "HeavyBleedingDelta": 0.55,
+      "LightBleedingDelta": 0.75,
+      "casingMass": 40,
+      "casingName": "17.8x89",
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "StackMaxSize": 10
+    },
+    "locales": {
+      "en": {
+        "name": ".700 Nitro Express SP \"Mammoth\"",
+        "shortName": ".700 SP",
+        "description": "A custom .700 Nitro Express soft-point cartridge nicknamed \"Mammoth\". Its shortened projectile has an exposed lead nose, prioritizing severe damage to unarmored targets over penetration of protective plates."
+      },
+      "po": {
+        "name": ".700 Nitro Express SP \"Mammoth\"",
+        "shortName": ".700 SP",
+        "description": "Carga expansiva personalizada .700 Nitro Express, apelidada de \"Mammoth\". O projétil mais curto tem uma ponta de chumbo exposta e prioriza dano elevado a alvos sem proteção, com menor capacidade de atravessar placas de blindagem."
+      },
+      "ru": {
+        "name": ".700 Nitro Express SP \"Мамонт\"",
+        "shortName": ".700 SP",
+        "description": "Самодельный полуоболочечный патрон .700 Nitro Express, прозванный \"Мамонт\". Укороченная пуля с открытым свинцовым носиком рассчитана на тяжёлые ранения незащищённых целей в ущерб пробитию бронепластин."
+      }
+    },
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "fleaPriceRoubles": 4200,
+    "handbookPriceRoubles": 2800,
+    "addtoSecureFilters": true
+  },
+  "2469576cb545e234792b3d35": {
+    "itemTplToClone": "67dc212493ce32834b0fa446",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/700NITRO_AP_GOLIATH.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.13,
+      "Caliber": "Caliber178x89",
+      "InitialSpeed": 605,
+      "BallisticCoeficient": 0.28,
+      "SpeedRetardation": 9e-05,
+      "BulletMassGram": 64.8,
+      "BulletDiameterMilimeters": 18.03,
+      "Damage": 220,
+      "ArmorDamage": 100,
+      "ammoRec": 15,
+      "PenetrationPower": 60,
+      "PenetrationPowerDiviation": 1,
+      "PenetrationChanceObstacle": 0.7,
+      "PenetrationDamageMod": 0.25,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "RicochetChance": 0.05,
+      "HeavyBleedingDelta": 0.55,
+      "LightBleedingDelta": 0.75,
+      "casingMass": 40,
+      "casingName": "17.8x89",
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "Tracer": false,
+      "StackMaxSize": 10
+    },
+    "locales": {
+      "en": {
+        "name": ".700 Nitro Express AP \"Goliath\"",
+        "shortName": ".700 AP",
+        "description": "An experimental armor-piercing .700 Nitro Express cartridge nicknamed \"Goliath\". A narrow, pointed hardened penetrator is held in a four-segment polymer sabot inside a brass case. This costly custom load trades some of the cartridge's devastating soft-target damage for substantially improved armor penetration."
+      },
+      "po": {
+        "name": ".700 Nitro Express AP \"Goliath\"",
+        "shortName": ".700 AP",
+        "description": "Cartucho experimental perfurante .700 Nitro Express, apelidado de \"Goliath\". Um penetrador fino, afilado e endurecido é sustentado por um sabot de polímero dividido em quatro segmentos, em um estojo de latão. Esta carga especial de alto custo troca parte do dano devastador a alvos sem proteção por uma capacidade muito maior de atravessar blindagem."
+      },
+      "ru": {
+        "name": ".700 Nitro Express AP \"Голиаф\"",
+        "shortName": ".700 AP",
+        "description": "Экспериментальный бронебойный патрон .700 Nitro Express, прозванный \"Голиаф\". Узкий заострённый закалённый сердечник удерживается четырёхсегментным полимерным поддоном в латунной гильзе. Дорогая кустарная сборка жертвует частью сокрушительного урона по мягким целям ради заметно лучшего пробития брони."
+      }
+    },
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "fleaPriceRoubles": 12000,
+    "handbookPriceRoubles": 8000,
+    "addtoSecureFilters": true
+  },
+  "dcbc76154efbfbc64506f30e": {
+    "itemTplToClone": "67dc212493ce32834b0fa446",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "shared/msga/700NITRO_CERBERUS.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.13,
+      "Caliber": "Caliber178x89",
+      "InitialSpeed": 605,
+      "BallisticCoeficient": 0.035,
+      "SpeedRetardation": 0.00013,
+      "BulletMassGram": 8.1,
+      "BulletDiameterMilimeters": 11.1,
+      "Damage": 65,
+      "ArmorDamage": 35,
+      "ammoRec": 10,
+      "PenetrationPower": 8,
+      "PenetrationPowerDiviation": 1,
+      "PenetrationChanceObstacle": 0.7,
+      "PenetrationDamageMod": 0.25,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "RicochetChance": 0.05,
+      "HeavyBleedingDelta": 0.55,
+      "LightBleedingDelta": 0.75,
+      "casingMass": 40,
+      "casingName": "17.8x89",
+      "ProjectileCount": 8,
+      "buckshotBullets": 8,
+      "ammoType": "buckshot",
+      "Tracer": false,
+      "StackMaxSize": 10
+    },
+    "locales": {
+      "en": {
+        "name": ".700 Nitro Express buckshot \"Cerberus\"",
+        "shortName": ".700 CB",
+        "description": "A custom multi-projectile .700 Nitro Express cartridge nicknamed \"Cerberus\". Eight heavy pellets replace the single rifle projectile, producing a devastating close-range spread at the cost of precision and armor penetration. A short red polymer closure and a red case band identify the load."
+      },
+      "po": {
+        "name": ".700 Nitro Express chumbo grosso \"Cerberus\"",
+        "shortName": ".700 CB",
+        "description": "Carga especial de múltiplos projéteis .700 Nitro Express, apelidada de \"Cerberus\". O projétil único é substituído por oito esferas pesadas, produzindo uma dispersão devastadora a curta distância, com menor precisão e penetração de blindagem. A tampa curta de polímero vermelho e a faixa vermelha no estojo identificam a carga."
+      },
+      "ru": {
+        "name": ".700 Nitro Express картечь \"Цербер\"",
+        "shortName": ".700 CB",
+        "description": "Самодельный многопульный патрон .700 Nitro Express, прозванный \"Цербер\". Восемь тяжёлых картечин заменяют единственную винтовочную пулю и дают сокрушительную осыпь на ближней дистанции ценой точности и бронепробития. Патрон узнаётся по короткой красной полимерной заглушке и красной полосе на гильзе."
+      }
+    },
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "fleaPriceRoubles": 5400,
+    "handbookPriceRoubles": 3600,
+    "addtoSecureFilters": true
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "6760ad706c5e0d271ce34f5a": {
+    "itemTplToClone": "65702664cfc010a0f5006a59",
+    "parentId": "543be5cb4bdc2deb348b4568",
+    "handbookParentId": "5b47574386f77428ca22b33c",
+    "handbookPriceRoubles": 96759,
+    "fleaPriceRoubles": 96759,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "item_ammo_can_556x45_loa.bundle",
+        "rcid": ""
+      },
+      "ExamineExperience": 50,
+      "Height": 2,
+      "InsuranceDisabled": false,
+      "StackMaxRandom": 420,
+      "StackMinRandom": 420,
+      "StackSlots": [
+        {
+          "_id": "6760ad8d8fb540a9fa41391a",
+          "_max_count": 420,
+          "_name": "cartridges",
+          "_parent": "6760ad706c5e0d271ce34f5a",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "54527a984bdc2d4e668b4567"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ],
+      "Weight": 7.1
+    },
+    "locales": {
+      "en": {
+        "name": "5.56x45mm M855 Ammo Can (420 pcs)",
+        "shortName": "M855 Ammo Can",
+        "description": "The 5.56x45mm M855 Ammo Can contains 420 rounds of 5.56x45mm M855 ammunition. The ammo is packed in a durable steel ammo can for long-term storage."
+      },
+      "po": {
+        "name": "Lata de Munição 5.56x45mm M855 (420 un.)",
+        "shortName": "Lata M855",
+        "description": "A lata de munição 5.56x45mm M855 contém 420 cartuchos 5.56x45mm M855. A munição vem acondicionada numa resistente lata de aço para armazenamento de longo prazo."
+      },
+      "ru": {
+        "name": "Металлический ящик с патронами 5.56x45мм M855 (420 штук)",
+        "shortName": "Цинк M855",
+        "description": "Металлический ящик содержит 420 патронов 5.56x45мм M855. Патроны упакованы в прочный стальной ящик для длительного хранения."
+      }
+    }
+  },
+  "6766bb770e1c2aa50294916f": {
+    "itemTplToClone": "65702664cfc010a0f5006a59",
+    "parentId": "543be5cb4bdc2deb348b4568",
+    "handbookParentId": "5b47574386f77428ca22b33c",
+    "handbookPriceRoubles": 290321,
+    "fleaPriceRoubles": 290321,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "item_ammo_crate_556x45_loa.bundle",
+        "rcid": ""
+      },
+      "ExamineExperience": 50,
+      "Height": 2,
+      "InsuranceDisabled": false,
+      "StackMaxRandom": 1200,
+      "StackMinRandom": 1200,
+      "StackSlots": [
+        {
+          "_id": "6766bb9a0e1c2aa502949170",
+          "_max_count": 1200,
+          "_name": "cartridges",
+          "_parent": "6766bb770e1c2aa50294916f",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "54527a984bdc2d4e668b4567"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ],
+      "Weight": 12.1,
+      "Width": 4
+    },
+    "locales": {
+      "en": {
+        "name": "5.56x45mm M855 Ammo Box (1200 pcs)",
+        "shortName": "M855 Ammo Box",
+        "description": "The 5.56x45mm M855 Ammo Box contains 1200 rounds of 5.56x45mm M855 ammunition. The ammo is packed in a durable wooden ammo box for long-term storage."
+      },
+      "po": {
+        "name": "5.56x45mm M855 Caixa de Munição (1200 un.)",
+        "shortName": "Caixa M855",
+        "description": "A caixa de munição 5.56x45mm M855 contém 1200 cartuchos 5.56x45mm M855. A munição vem acondicionada numa resistente caixa de madeira para armazenamento de longo prazo."
+      },
+      "ru": {
+        "name": "Деревянный ящик с патронами 5.56x45мм M855 (1200 штук)",
+        "shortName": "Ящик M855",
+        "description": "Деревянный ящик содержит 1200 патронов 5.56x45мм M855. Патроны упакованы в прочный деревянный ящик для длительного хранения."
+      }
+    }
+  }
+}
