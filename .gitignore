@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Build output
 bin/
 obj/
@@ -10,3 +11,8 @@ obj/
 .idea/
 *.user
 *.suo
+=======
+/3d
+/dist
+/node_modules
+>>>>>>> 722de7133cb20e21854ef13aacfe64df5a991836

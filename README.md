@@ -29,7 +29,7 @@ The ammo base for SPT 4.1.6: 50 new cartridges in 14 calibers and two 5.56x45 M8
 
 ## Install
 
-Install [WTT-CommonLib](https://github.com/GrooveypenguinX/WTT-CommonLib) **3.0.6** or newer (3.0.x) first. Then extract `LotsOfAmmo.zip` into your SPT game folder:
+Install [WTT-CommonLib](https://github.com/WelcomeToThursday/WTT-CommonLib) **3.0.6** or newer (3.0.x) first. Then extract `LotsOfAmmo.zip` into your SPT game folder:
 
 ```
 <game folder>/
